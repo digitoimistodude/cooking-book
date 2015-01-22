@@ -6,7 +6,9 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 
 ### Slide based on viewport height
 
+```javascript
+$('.slide').css('height', window.innerHeight);
+$(window).resize(function(){
     $('.slide').css('height', window.innerHeight);
-    $(window).resize(function(){
-        $('.slide').css('height', window.innerHeight);
-    });
+});
+```
