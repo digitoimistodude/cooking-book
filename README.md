@@ -11,7 +11,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 
 ## jQuery
 
-### Resize div based on viewport height
+#### Resize div based on viewport height
 
 ```javascript
 $('.slide').css('height', window.innerHeight);
@@ -22,7 +22,7 @@ $(window).resize(function(){
 
 ## PHP
 
-### Repeater field in ACF Pro
+#### Repeater field in ACF Pro
 
 ```php
 <?php if( have_rows('repeater') ): ?>
