@@ -9,9 +9,9 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 2. [PHP](#php)
   1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
 
-### jQuery
+## jQuery
 
-#### Resize div based on viewport height
+### Resize div based on viewport height
 
 ```javascript
 $('.slide').css('height', window.innerHeight);
@@ -20,9 +20,9 @@ $(window).resize(function(){
 });
 ```
 
-### PHP
+## PHP
 
-#### Repeater field in ACF Pro
+### Repeater field in ACF Pro
 
 ```php
 <?php if( have_rows('repeater') ): ?>
