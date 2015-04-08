@@ -8,6 +8,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
   1. [Resize div based on viewport height](#resize-div-based-on-viewport-height)
 2. [PHP](#php)
   1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
+  2. [Show all PHP errors](#show-all-php-errors)
 
 ## jQuery
 
@@ -54,4 +55,13 @@ $(window).resize(function(){
 
     </div>
 <?php endif; ?>
+```
+
+### Show all PHP errors
+
+```php
+<?php 
+    ini_set('display_errors', 1); 
+    error_reporting(E_ALL);
+?>
 ```
