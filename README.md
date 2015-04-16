@@ -73,5 +73,5 @@ $(window).resize(function(){
 ### Replace old URL with new
 
 ```sql
-update wp_posts set post_content = replace(post_content, ’http:\/\/oldurl.info’, ’http:\/\/newurl.com’);
+update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info', 'http:\/\/newurl.com');
 ```
