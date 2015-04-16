@@ -9,6 +9,8 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 2. [PHP](#php)
   1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
   2. [Show all PHP errors](#show-all-php-errors)
+3. [MySQL](#mysql)
+  1. [Replace old URL with new](#replace-old-url-with-new)
 
 ## jQuery
 
@@ -64,4 +66,12 @@ $(window).resize(function(){
     ini_set('display_errors', 1); 
     error_reporting(E_ALL);
 ?>
+```
+
+## MySQL
+
+### Replace old URL with new
+
+```sql
+update wp_posts set post_content = replace(post_content, ’http:\/\/oldurl.info’, ’http:\/\/newurl.com’);
 ```
