@@ -20,7 +20,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 4. [Bash / Other](#bash-other)
 
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
-   2. [Quick backup to HTML + resources](#quick-backup-to-html-resources)
+   2. [Quick backup to HTML + resources](#quick-backup-to-html--resources)
    
 
 
