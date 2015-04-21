@@ -20,6 +20,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 4. [Bash / Other](#bash-other)
 
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
+   2. [Quick backup to HTML + resources](#quick-backup-to-html-resources)
    
 
 
@@ -93,4 +94,10 @@ update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info',
 
 ``` bash
 grep -R "gravityforms" --include "composer.json" Projects/
+```
+
+### Quick backup to HTML + resources
+
+``` bash
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent  http://www.example.com/
 ```
