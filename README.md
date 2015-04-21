@@ -16,6 +16,10 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 3. [MySQL](#mysql)
    
    1. [Replace old URL with new](#replace-old-url-with-new)
+
+4. [Bash / Other](#bash-other)
+
+   1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
    
 
 
@@ -81,4 +85,12 @@ $(window).resize(function(){
 
 ``` sql
 update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info', 'http:\/\/newurl.com');
+```
+
+## Bash / Other
+
+### Find all projects with gravityforms installed
+
+``` bash
+grep -R "gravityforms" --include "composer.json" Projects/
 ```
