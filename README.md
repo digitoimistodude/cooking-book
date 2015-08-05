@@ -107,8 +107,18 @@ In `~/.bashrc`:
 alias wpversions='grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json'
 ```
 
+Restart terminal or run `. ~/.bashrc` for changes to take effect. Then you can just type `wpversions` to see WordPress versions.
+
 #### Replace WordPress versions in composer.json (OS X)
 
 ``` bash
 find ~/Projects/ -name composer.json -maxdepth 2 -exec sed -i "" 's/4.2.3/4.2.4/g' {} +
 ```
+
+Bash alias in `~/.bashrc`:
+
+``` bash
+alias updateversion='find ~/Projects/ -name composer.json -maxdepth 2 -exec sed -i "" 's/$1/$2/g' {} +'
+```
+
+Then you can update any version by typing `updateversion oldversion newversion`, for example WordPress 4.2.3 to WordPress 4.2.4: `updateversion 4.2.3 4.2.4`.
