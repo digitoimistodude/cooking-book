@@ -15,7 +15,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
    2. [Quick backup to HTML + resources](#quick-backup-to-html--resources)
    3. [Check WordPress versions in composer.json](#check-wordpress-versions-in-composerjson)
-   4. [Replace WordPress versions in composer.json (OS X)](#replace-wordpress-versions-in-composerjson-osx)
+   4. [Replace WordPress versions in composer.json (OS X)](#replace-wordpress-versions-in-composerjson-os-x)
 
 ## jQuery
 
