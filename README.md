@@ -109,12 +109,6 @@ alias wpversions='grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json'
 
 Restart terminal or run `. ~/.bashrc` for changes to take effect. Then you can just type `wpversions` to see WordPress versions.
 
-You can also add alias for checking any version with `version pluginname`, like this:
-
-``` bash
-alias version='grep -R "$0" ~/Projects/*/composer.json'
-```
-
 #### Replace WordPress versions in composer.json (OS X)
 
 ``` bash
