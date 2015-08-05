@@ -5,28 +5,21 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
 # Table of contents
 
 1. [jQuery](#jquery)
-   
    1. [Resize div based on viewport height](#resize-div-based-on-viewport-height)
-   
 2. [PHP](#php)
-   
    1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
    2. [Show all PHP errors](#show-all-php-errors)
-   
 3. [MySQL](#mysql)
-   
    1. [Replace old URL with new](#replace-old-url-with-new)
-
 4. [Bash / Other](#bash-other)
-
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
    2. [Quick backup to HTML + resources](#quick-backup-to-html--resources)
-   
-
+   3. [Check WordPress versions in composer.json](#check-wordpress-versions-in-composerjson)
+   4. [Replace WordPress versions in composer.json (OS X)](#replace-wordpress-versions-in-composerjson-osx)
 
 ## jQuery
 
-### Resize div based on viewport height
+#### Resize div based on viewport height
 
 ``` javascript
 $('.slide').css('height', window.innerHeight);
@@ -37,7 +30,7 @@ $(window).resize(function(){
 
 ## PHP
 
-### Repeater field in ACF Pro
+#### Repeater field in ACF Pro
 
 ``` php
 <?php if( have_rows('repeater') ): ?>
@@ -71,7 +64,7 @@ $(window).resize(function(){
 <?php endif; ?>
 ```
 
-### Show all PHP errors
+#### Show all PHP errors
 
 ``` php
 <?php 
@@ -82,7 +75,7 @@ $(window).resize(function(){
 
 ## MySQL
 
-### Replace old URL with new
+#### Replace old URL with new
 
 ``` sql
 update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info', 'http:\/\/newurl.com');
@@ -90,14 +83,32 @@ update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info',
 
 ## Bash / Other
 
-### Find all projects with gravityforms installed
+#### Find all projects with gravityforms installed
 
 ``` bash
 grep -R "gravityforms" --include "composer.json" Projects/
 ```
 
-### Quick backup to HTML + resources
+#### Quick backup to HTML + resources
 
 ``` bash
 wget --mirror --convert-links --adjust-extension --page-requisites --no-parent  http://www.example.com/
+```
+
+#### Check WordPress versions in composer.json
+
+``` bash
+grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json
+```
+
+In `~/.bashrc`:
+
+``` bash
+alias wpversions='grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json'
+```
+
+#### Replace WordPress versions in composer.json (OS X)
+
+``` bash
+find ~/Projects/ -name composer.json -maxdepth 2 -exec sed -i "" 's/4.2.3/4.2.4/g' {} +
 ```
