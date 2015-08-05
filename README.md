@@ -112,7 +112,7 @@ Restart terminal or run `. ~/.bashrc` for changes to take effect. Then you can j
 You can also add alias for checking any version with `version pluginname`, like this:
 
 ``` bash
-alias version='grep -R "$1" ~/Projects/*/composer.json'
+alias version='grep -R "$0" ~/Projects/*/composer.json'
 ```
 
 #### Replace WordPress versions in composer.json (OS X)
