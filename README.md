@@ -92,7 +92,7 @@ grep -R "gravityforms" --include "composer.json" Projects/
 #### Quick backup to HTML + resources
 
 ``` bash
-wget --mirror --convert-links --adjust-extension --page-requisites --no-parent  http://www.example.com/
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent http://www.example.com/
 ```
 
 #### Check WordPress versions in composer.json
