@@ -13,7 +13,7 @@ A collection of frequently used front end code snippets by [Roni "Rolle" Laukkar
    1. [Replace old URL with new](#replace-old-url-with-new)
 4. [Bash / Other](#bash-other)
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
-   2. [Quick backup to HTML + resources](#quick-backup-to-html--resources)
+   2. [Quick backup entire site](#quick-backup-entire-site)
    3. [Check WordPress versions in composer.json](#check-wordpress-versions-in-composerjson)
    4. [Replace WordPress versions in composer.json (OS X)](#replace-wordpress-versions-in-composerjson-os-x)
 
@@ -89,10 +89,10 @@ update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info',
 grep -R "gravityforms" --include "composer.json" Projects/
 ```
 
-#### Quick backup to HTML + resources
+#### Quick backup entire site
 
 ``` bash
-wget --mirror --convert-links --adjust-extension --page-requisites --no-parent http://www.example.com/
+wget --cache=off -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36" --cookies=on --glob=on --tries=3 --proxy=off -e robots=off -x -r --level=1 -p -H -k --quota=100m http://www.example.com/
 ```
 
 #### Check WordPress versions in composer.json
