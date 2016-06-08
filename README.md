@@ -7,11 +7,12 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
 1. [jQuery](#jquery)
    1. [Resize div based on viewport height](#resize-div-based-on-viewport-height)
 2. [General PHP](#general-php)
-   1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
-   2. [Show all PHP errors](#show-all-php-errors)
+   1. [Show all PHP errors](#show-all-php-errors)
 3. [WordPress](#wordpress)
    1. [Plugins](#plugins)
      1. [ACF](#acf)
+       1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
+       2. [Quick title and description fields](#quick-title-and-description-fields)
 4. [MySQL](#mysql)
    1. [Replace old URL with new](#replace-old-url-with-new)
 5. [Bash / Other](#bash-other)
@@ -54,6 +55,18 @@ $(window).resize(function(){
 
     <?php endwhile; ?> 
 
+<?php endif; ?>
+```
+
+##### Quick title and description fields
+
+``` php
+<?php if ( get_field( 'main_title') ) : ?>
+  <h2><?php echo get_field('main_title'); ?></h2>
+<?php endif; ?>
+
+<?php if ( get_field( 'main_description') ) : ?>
+  <?php echo get_field('main_description'); ?>
 <?php endif; ?>
 ```
 
