@@ -9,7 +9,7 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
 2. [General PHP](#general-php)
    1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
    2. [Show all PHP errors](#show-all-php-errors)
-3. [WordPress]
+3. [WordPress](#wordpress)
    1. [Plugins](#plugins)
      1. [ACF](#acf)
 4. [MySQL](#mysql)
