@@ -39,17 +39,17 @@ $(window).resize(function(){
 ##### Repeater field in ACF Pro
 
 ``` php
-<?php if( have_rows('repeater') ): ?>
+<?php if ( have_rows( 'repeater' ) ): ?>
 
-    <?php while( have_rows('repeater',$id) ): the_row(); 
-        $image = get_sub_field('repeater_image');
+    <?php while( have_rows( 'repeater' ) ): the_row(); 
+        $image = get_sub_field( 'repeater_image' );
     ?>
 
-        <?php if ( get_sub_field('repeater_title') ) : ?>
-          <h2><?php echo get_sub_field('repeater_title'); ?></h2>
+        <?php if ( get_sub_field( 'repeater_title' ) ) : ?>
+          <h2><?php echo get_sub_field( 'repeater_title' ); ?></h2>
         <?php endif; ?>
 
-        <?php if( $image ) : ?>
+        <?php if ( $image ) : ?>
             <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field('repeater_title'); ?>" />
         <?php endif; ?>
 
@@ -65,8 +65,8 @@ $(window).resize(function(){
   <h2><?php echo get_field('main_title'); ?></h2>
 <?php endif; ?>
 
-<?php if ( get_field( 'main_description') ) : ?>
-  <?php echo get_field('main_description'); ?>
+<?php if ( get_field( 'main_description' ) ) : ?>
+  <?php echo get_field( 'main_description' ); ?>
 <?php endif; ?>
 ```
 
