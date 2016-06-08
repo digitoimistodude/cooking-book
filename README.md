@@ -13,6 +13,7 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
      1. [ACF](#acf)
         1. [Repeater field in ACF Pro](#repeater-field-in-acf-pro)
         2. [Quick title and description fields](#quick-title-and-description-fields)
+        3. [Simple flexible + repeater content structure](#simple-flexible--repeater-content-structure)
 4. [MySQL](#mysql)
    1. [Replace old URL with new](#replace-old-url-with-new)
 5. [Bash / Other](#bash-other)
@@ -67,6 +68,40 @@ $(window).resize(function(){
 
 <?php if ( get_field( 'main_description' ) ) : ?>
   <?php echo get_field( 'main_description' ); ?>
+<?php endif; ?>
+```
+
+##### Simple flexible + repeater content structure
+
+``` php
+<?php if ( have_rows( 'section' ) ) : ?>
+  <?php while ( have_rows( 'section' ) ) : the_row(); ?>
+    
+    <?php if ( get_row_layout() === 'section_layout' ) : ?>
+
+      <?php if ( have_rows( 'section_repeater' ) ) : ?>
+        <?php while ( have_rows( 'section_repeater' ) ) : the_row(); ?>
+
+          <?php if ( get_sub_field( 'repeater_field' ) ) : ?>
+            <?php echo get_sub_field( 'repeater_field' ); ?>
+          <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+    <?php elseif ( get_row_layout() === 'section_another_layout' ) : ?>
+
+      <?php if ( get_sub_field( 'section_another_title' ) ) : ?>
+        <h2><?php echo get_sub_field( 'section_another_title' ); ?></h2>
+      <?php endif; ?>
+
+      <?php if ( get_sub_field( 'section_another_description' ) ) : ?>
+        <h2><?php echo get_sub_field( 'section_another_description' ); ?></h2>
+      <?php endif; ?>
+
+    <?php endif; ?>
+
+  <?php endwhile; ?>
 <?php endif; ?>
 ```
 
