@@ -50,7 +50,7 @@ $(window).resize(function(){
         <?php endif; ?>
 
         <?php if ( $image ) : ?>
-            <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field('repeater_title'); ?>" />
+            <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field( 'repeater_title' ); ?>" />
         <?php endif; ?>
 
     <?php endwhile; ?> 
@@ -62,7 +62,7 @@ $(window).resize(function(){
 
 ``` php
 <?php if ( get_field( 'main_title') ) : ?>
-  <h2><?php echo get_field('main_title'); ?></h2>
+  <h2><?php echo get_field( 'main_title' ); ?></h2>
 <?php endif; ?>
 
 <?php if ( get_field( 'main_description' ) ) : ?>
