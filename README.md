@@ -40,23 +40,14 @@ $(window).resize(function(){
 ##### Repeater field in ACF Pro
 
 ``` php
-<?php if ( have_rows( 'repeater' ) ): ?>
-
-    <?php while( have_rows( 'repeater' ) ): the_row(); 
-        $image = get_sub_field( 'repeater_image' );
-    ?>
-
-        <?php if ( get_sub_field( 'repeater_title' ) ) : ?>
-          <h2><?php echo get_sub_field( 'repeater_title' ); ?></h2>
-        <?php endif; ?>
-
-        <?php if ( $image ) : ?>
-            <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field( 'repeater_title' ); ?>" />
-        <?php endif; ?>
-
-    <?php endwhile; ?> 
-
-<?php endif; ?>
+<?php while( have_rows( 'repeater' ) ): the_row();  $image = get_sub_field( 'repeater_image' ); ?>
+  <?php if ( get_sub_field( 'repeater_title' ) ) : ?>
+    <h2><?php echo get_sub_field( 'repeater_title' ); ?></h2>
+  <?php endif; ?>
+  <?php if ( $image ) : ?>
+    <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field( 'repeater_title' ); ?>" />
+  <?php endif; ?>                        
+<?php endwhile; ?>
 ```
 
 ##### Quick title and description fields
@@ -76,7 +67,7 @@ $(window).resize(function(){
 ``` php
 <?php if ( have_rows( 'section' ) ) : ?>
   <?php while ( have_rows( 'section' ) ) : the_row(); ?>
-    
+
     <?php if ( get_row_layout() === 'section_layout' ) : ?>
 
       <?php if ( have_rows( 'section_repeater' ) ) : ?>
@@ -112,7 +103,7 @@ $(window).resize(function(){
 <?php
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL); 
+    error_reporting(E_ALL);
 ?>
 ```
 
