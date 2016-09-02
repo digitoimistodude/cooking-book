@@ -40,8 +40,8 @@ $(window).resize(function(){
 ##### Repeater field in ACF Pro
 
 ``` php
-<?php if ( have_rows( 'repeater' ) ): ?>
-  <?php while( have_rows( 'repeater' ) ): the_row();  $image = get_sub_field( 'repeater_image' ); ?>
+<?php if ( have_rows( 'repeater' ) ) : ?>
+  <?php while( have_rows( 'repeater' ) ) : the_row();  $image = get_sub_field( 'repeater_image' ); ?>
     <?php if ( get_sub_field( 'repeater_title' ) ) : ?>
       <h2><?php echo get_sub_field( 'repeater_title' ); ?></h2>
     <?php endif; ?>
