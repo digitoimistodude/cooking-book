@@ -16,7 +16,9 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
         3. [Simple flexible + repeater content structure](#simple-flexible--repeater-content-structure)
 4. [MySQL](#mysql)
    1. [Replace old URL with new](#replace-old-url-with-new)
-5. [Bash / Other](#bash-other)
+5. [Video](#video)
+   1. [Optimize video for web](#optimize-video-for-web) 
+6. [Bash / Other](#bash-other)
    1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
    2. [Quick backup entire site](#quick-backup-entire-site)
    3. [Check WordPress versions in composer.json](#check-wordpress-versions-in-composerjson)
@@ -115,6 +117,15 @@ $(window).resize(function(){
 
 ``` sql
 update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info', 'http:\/\/newurl.com');
+```
+
+## Video
+
+##### Optimize video for web
+
+``` bash
+HandBrakeCLI -i input.mp4 -o output.mp4 --encoder x264 --vb 900 --ab 128 --maxWidth 640 --maxHeight 480 --two-pass --optimize
+ffmpeg -i input.mp4 -acodec libvorbis -vcodec libvpx output.webm
 ```
 
 ## Bash / Other
