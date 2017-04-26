@@ -123,8 +123,15 @@ update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info',
 
 ##### Optimize video for web
 
+For web optimized mp4:
+
 ``` bash
 HandBrakeCLI -i input.mp4 -o output.mp4 --encoder x264 --vb 900 --ab 128 --maxWidth 640 --maxHeight 480 --two-pass --optimize
+```
+
+For web optimized webm:
+
+``` bash
 ffmpeg -i input.mp4 -acodec libvorbis -vcodec libvpx output.webm
 ```
 
