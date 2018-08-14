@@ -42,16 +42,21 @@ $(window).resize(function(){
 ##### Repeater field in ACF Pro
 
 ``` php
-<?php if ( have_rows( 'repeater' ) ) : ?>
-  <?php while( have_rows( 'repeater' ) ) : the_row();  $image = get_sub_field( 'repeater_image' ); ?>
-    <?php if ( get_sub_field( 'repeater_title' ) ) : ?>
-      <h2><?php echo get_sub_field( 'repeater_title' ); ?></h2>
-    <?php endif; ?>
-    <?php if ( $image ) : ?>
-      <img src="<?php echo $image['sizes'][ 'large' ]; ?>" alt="<?php echo get_sub_field( 'repeater_title' ); ?>" />
-    <?php endif; ?>                        
-  <?php endwhile; ?>                    
-<?php endif; ?>
+<?php if ( have_rows( 'repeater' ) ) :
+  while( have_rows( 'repeater' ) ) : the_row();
+
+    // Fields
+    $repeater_image = get_sub_field( 'repeater_image' );
+    $repeater_title = get_sub_field( 'repeater_title' )
+
+    if ( ! empty( $repeater_title ) ) : ?>
+      <h2><?php echo $repeater_title; ?></h2>
+    <?php endif;
+    if ( ! empty( $repeater_image ) ) : ?>
+      <img src="<?php echo $repeater_image['sizes'][ 'large' ]; ?>" alt="<?php echo $repeater_title; ?>" />
+    <?php endif;
+  endwhile;
+endif; ?>
 ```
 
 ##### Quick title and description fields
