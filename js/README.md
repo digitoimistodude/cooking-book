@@ -5,3 +5,4 @@ This page of Dude's cooking book is a collection of frequently used, quick javas
 # Table of contents
 
 - [Resize div based on viewport height](resize-div-based-on-viewport-height.js)
+- [Magnific popup gallery](magnific-popup-gallery.js)
