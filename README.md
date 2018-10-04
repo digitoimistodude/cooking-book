@@ -1,11 +1,9 @@
 # Cooking book
 
-Dude's Cooking Book is a collection of frequently used, quick front and back end code snippets by [Digitoimisto Dude Oy](https://www.dude.fi) web developer team. These snippets are mainly quick boilerplates for easy and fast use in WordPress development.
+Dude's cooking book is a collection of frequently used, quick front and back end code snippets by [Digitoimisto Dude Oy](https://www.dude.fi) web developer team. These snippets are mainly quick boilerplates for easy and fast use in WordPress development.
 
 # Table of contents
 
-1. [jQuery](#jquery)
-   1. [Resize div based on viewport height](#resize-div-based-on-viewport-height)
 2. [General PHP](#general-php)
    1. [Show all PHP errors](#show-all-php-errors)
 3. [WordPress](#wordpress)
@@ -16,17 +14,6 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
         3. [Simple flexible + repeater content structure](#simple-flexible--repeater-content-structure)
 4. [MySQL](#mysql)
    1. [Replace old URL with new](#replace-old-url-with-new)
-
-## jQuery
-
-##### Resize div based on viewport height
-
-``` javascript
-$('.slide').css('height', window.innerHeight);
-$(window).resize(function(){
-    $('.slide').css('height', window.innerHeight);
-});
-```
 
 ## WordPress
 ### Plugins
