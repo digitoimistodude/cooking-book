@@ -1,0 +1,17 @@
+<div class="search">
+  <div class="container">
+    <a href="#" class="close"><?php echo file_get_contents( esc_url( get_theme_file_path( '/svg/close.svg' ) ) ); ?></a>
+    <div class="search-input">
+      <label for="search-field" class="screen-reader-text"><?php ask_e( 'Search: Search' ) ?>:</label>
+      <input type="text" name="search-field" class="search-field" placeholder="<?php ask_e( 'Search: Type your search here' ) ?>..." />
+    </div>
+    <div class="search-results">
+      <div class="items">
+        <div class="item" v-bind:id="'result-' + result.id" v-for="(result, index) in results">
+          <p><a v-bind:href="result.link" v-html="result.post_title">{{ result.post_title }}</a></p>
+        </div><!-- .item -->
+      <p class="notfound"><?php ask_e( 'Search: No results' ); ?>.</p>
+      </div><!-- .items -->
+    </div><!-- .search-results -->
+  </div>
+</div>
