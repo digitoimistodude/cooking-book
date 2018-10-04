@@ -16,8 +16,6 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
         3. [Simple flexible + repeater content structure](#simple-flexible--repeater-content-structure)
 4. [MySQL](#mysql)
    1. [Replace old URL with new](#replace-old-url-with-new)
-5. [Video](#video)
-   1. [Optimize video for web](#optimize-video-for-web) 
 
 ## jQuery
 
@@ -118,61 +116,3 @@ endif; ?>
 ``` sql
 update wp_posts set post_content = replace(post_content, 'http:\/\/oldurl.info', 'http:\/\/newurl.com');
 ```
-
-## Video
-
-##### Optimize video for web
-
-For web optimized mp4:
-
-``` bash
-HandBrakeCLI -i input.mp4 -o output.mp4 --encoder x264 --vb 900 --ab 128 --maxWidth 640 --maxHeight 480 --two-pass --optimize
-```
-
-For web optimized webm:
-
-``` bash
-ffmpeg -i input.mp4 -acodec libvorbis -vcodec libvpx output.webm
-```
-
-## Bash / Other
-
-##### Find all projects with gravityforms installed
-
-``` bash
-grep -R "gravityforms" --include "composer.json" Projects/
-```
-
-##### Quick backup entire site
-
-``` bash
-wget --cache=off -U "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36" --cookies=on --glob=on --tries=3 --proxy=off -e robots=off -x -r --level=1 -p -H -k --quota=100m http://www.example.com/
-```
-
-##### Check WordPress versions in composer.json
-
-``` bash
-grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json
-```
-
-In `~/.bashrc`:
-
-``` bash
-alias wpversions='grep -R "johnpbloch/wordpress" ~/Projects/*/composer.json'
-```
-
-Restart terminal or run `. ~/.bashrc` for changes to take effect. Then you can just type `wpversions` to see WordPress versions.
-
-#### Replace WordPress versions in composer.json (OS X)
-
-``` bash
-find ~/Projects/ -name composer.json -maxdepth 2 -exec sed -i "" 's/4.2.3/4.2.4/g' {} +
-```
-
-Bash alias in `~/.bashrc`:
-
-``` bash
-alias updateversion='find ~/Projects/ -name composer.json -maxdepth 2 -exec sed -i "" 's/$1/$2/g' {} +'
-```
-
-Then you can update any version by typing `updateversion oldversion newversion`, for example WordPress 4.2.3 to WordPress 4.2.4: `updateversion 4.2.3 4.2.4`.
