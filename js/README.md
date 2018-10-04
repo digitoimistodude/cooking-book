@@ -1,6 +1,6 @@
 # Javascript cooking book
 
-This page of Dude's cooking book is a collection of frequently used, quick javascript code snippets. Check out the [whole cooking book](https://github.com/digitoimistodude/cooking-book)!
+This page of Dude's cooking book is a collection of frequently used, quick javascript code snippets. Check out the [whole cooking book](../README.md)!
 
 # Table of contents
 
