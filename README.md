@@ -18,11 +18,6 @@ Dude's Cooking Book is a collection of frequently used, quick front and back end
    1. [Replace old URL with new](#replace-old-url-with-new)
 5. [Video](#video)
    1. [Optimize video for web](#optimize-video-for-web) 
-6. [Bash / Other](#bash-other)
-   1. [Find all projects with gravityforms installed](#find-all-projects-with-gravityforms-installed)
-   2. [Quick backup entire site](#quick-backup-entire-site)
-   3. [Check WordPress versions in composer.json](#check-wordpress-versions-in-composerjson)
-   4. [Replace WordPress versions in composer.json (OS X)](#replace-wordpress-versions-in-composerjson-os-x)
 
 ## jQuery
 
