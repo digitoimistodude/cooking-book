@@ -8,3 +8,4 @@ This page of Dude's cooking book is a collection of frequently used, quick PHP c
 - [Modular content loop with ACF](modular-content-acf.php)
 - [Cached modular content loop with ACF](modular-content-acf-cached.php)
 - [Options page with ACF](options-page-acf.php)
+- [ACF dynamic svg icon select](acf-dynamic-svg-icon-select.php)
