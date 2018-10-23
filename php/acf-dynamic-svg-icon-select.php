@@ -4,7 +4,7 @@
  * @Author: Timi Wahalahti
  * @Date:   2018-10-05 11:23:09
  * @Last Modified by:   Timi Wahalahti
- * @Last Modified time: 2018-10-05 11:26:25
+ * @Last Modified time: 2018-10-23 16:38:35
  */
 
 /**
@@ -15,8 +15,11 @@
  */
 function siteprefix_acf_dynamic_select_for_icon( $field ) {
 
-	// check if field name does not contain "icon_svg" and check that our function to get icons exists.
-  if ( ! strpos( $field['name'], 'icon_svg' ) && ! function_exists( 'get_icons_for_user' ) ) {
+	if ( ! function_exists( 'get_icons_for_user' ) ) {
+    return $field;
+  }
+
+  if ( false === strpos( $field['name'], 'icon_svg' ) ) {
     return $field;
   }
 
