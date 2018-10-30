@@ -4,19 +4,29 @@
  * @Author: Timi Wahalahti
  * @Date:   2018-10-17 11:07:20
  * @Last Modified by:   Timi Wahalahti
- * @Last Modified time: 2018-10-17 11:08:50
+ * @Last Modified time: 2018-10-30 12:55:33
  *
  * NOTE: remove transient cache functionality if you don't build any
  * transien cache clearing when event post type posts update.
  */
 
-function siteprefix_get_events( $amount = 0 ) {
+function siteprefix_get_events( $amount = 0, $past = false ) {
+  $past_key = '';
+  if ( $past ) {
+    $past_key = '_past';
+  }
+
   $today = date( 'Ymd' );
-  $transient_key = "events_{$today}|{$amount}";
+  $transient_key = "events{$past_key}_{$today}|{$amount}";
 
   // Try to get our events from transient cache.
   if ( $events = get_transient( $transient_key ) ) {
     return $events;
+  }
+
+  $compare = '>';
+  if ( $past ) {
+    $compare = '<';
   }
 
   $events = array();
@@ -32,7 +42,7 @@ function siteprefix_get_events( $amount = 0 ) {
       array(
         'key'     => 'start_day',
         'value'   => $today,
-        'compare' => '>',
+        'compare' => $compare,
       ),
     ),
     'posts_per_page'            => 100,
@@ -55,55 +65,80 @@ function siteprefix_get_events( $amount = 0 ) {
 
   wp_reset_query();
 
-  // Get active events, starting today or ongoing.
-  $query = array(
-    'post_type'                 => 'event',
-    'post_status'               => 'publish',
-    'orderby'                   => 'meta_value',
-    'meta_key'                  => 'start_day',
-    'meta_query'                => array(
-      array(
-        'key'     => 'start_day',
-        'value'   => $today,
-        'compare' => '<=',
+  if ( ! $past ) {
+    // Get active events, starting today or ongoing.
+    $query = array(
+      'post_type'                 => 'event',
+      'post_status'               => 'publish',
+      'orderby'                   => 'meta_value',
+      'meta_key'                  => 'start_day',
+      'meta_query'                => array(
+        array(
+          'key'     => 'start_day',
+          'value'   => $today,
+          'compare' => '<=',
+        ),
+        array(
+          'key'     => 'end_day',
+          'value'   => $today,
+          'compare' => '>=',
+        ),
       ),
-      array(
-        'key'     => 'end_day',
-        'value'   => $today,
-        'compare' => '>=',
-      ),
-    ),
-    'posts_per_page'            => 100,
-    'no_found_rows'             => false,
-    'cache_results'             => true,
-    'update_post_term_cache'    => true,
-    'update_post_meta_cache'    => false,
-  );
+      'posts_per_page'            => 100,
+      'no_found_rows'             => false,
+      'cache_results'             => true,
+      'update_post_term_cache'    => true,
+      'update_post_meta_cache'    => false,
+    );
 
-  $query = new WP_Query( $query );
-  if ( $query->have_posts() ) {
-    while ( $query->have_posts() ) {
-      $query->the_post();
+    $query = new WP_Query( $query );
+    if ( $query->have_posts() ) {
+      while ( $query->have_posts() ) {
+        $query->the_post();
 
-      // Add event to array with day as a key.
-      $event_day = get_post_meta( get_the_id(), 'start_day', true );
-      $tmp_events[ $event_day ][] = get_the_id();
+        // Add event to array with day as a key.
+        $event_day = get_post_meta( get_the_id(), 'start_day', true );
+        $tmp_events[ $event_day ][] = get_the_id();
+      }
     }
-  }
 
-  wp_reset_query();
+    wp_reset_query();
+  }
 
   // Order the days where we have events.
   ksort( $tmp_events );
 
   // Loop teh days and events to flatten the array.
   foreach ( $tmp_events as $event_day => $day_events ) {
+    $event_day = strtotime( $event_day );
+
     foreach ( $day_events as $event ) {
+      $end_day = get_post_meta( $event, 'end_day', true );
+
+      if ( ! empty( $end_day ) ) {
+        $end_day = strtotime( $end_day );
+      }
+
+      $day_str = '';
+      if ( empty( $end_day ) || $event_day === $end_day ) {
+        $day_str = date( 'j.n.Y', $event_day );
+      } else {
+        $start_month = date( 'M', $event_day );
+        $end_month = date( 'M', $end_day );
+
+        if ( $start_month !== $end_month ) {
+          $day_str = date( 'j.n.', $event_day );
+        } else {
+          $day_str = date( 'j.', $event_day );
+        }
+
+        $day_str .= ' - ' . date( 'j.n.Y', $end_day );
+      }
 
       // Add event to our return.
       $events[] = array(
-        'start_day' => $event_day,
-        'post_id'   => $event,
+        'day_str' => $day_str,
+        'post_id' => $event,
       );
     }
   }
