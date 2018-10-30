@@ -1,6 +1,6 @@
 # PHP cooking book
 
-This page of Dude's cooking book is a collection of frequently used, quick PHP code snippets. Check out the [whole cooking book](../README.md)!
+This page of Dude's cooking book is a collection of frequently used, quick WordPress PHP code snippets to include in functions.php or hooks under `inc/`. Check out the [the whole cooking book](../README.md)!
 
 # Table of contents
 
@@ -13,3 +13,5 @@ This page of Dude's cooking book is a collection of frequently used, quick PHP c
 - [Get and cache from page using spesfic template](get-content-from-page-using-template.php)
 - [Make human readable date string (start and end)](make-date-string.php)
 - [Get ongoing and future events](get-events.php)
+- [Custom pagination with numbers only](custom-pagination-numbers-only.php)
+- [Custom pagination with numbers and prev and next links](custom-pagination.php)
