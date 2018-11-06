@@ -40,6 +40,7 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
 
   	// make template part name.
     $template_part_name = str_replace( '_', '-', get_row_layout() );
+    $template_row_index = get_row_index();
     $template_part_path = get_theme_file_path( "template-parts/modules/{$template_part_name}.php" );
 
     /**
@@ -48,10 +49,14 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
      *
      *  TOOD: differiate use case where same module is used multiple times (add row ID to key)
      */
-    $template_part_transient_name = "modular_page_{$have_rows_id}_module_{$template_part_name}";
+    $template_part_transient_name = "modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
 
-    // check if module needs to bypass cache
-    if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) ) {
+    /**
+     *  Check if module needs to bypass cache or we are in development envarioment.
+     *  If it in cache, we get content to variable. If not in cache, put it in there and to variable.
+     *  In both cases, variable is returned in the end of this functon.
+     */
+    if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) && getenv( 'WP_ENV' ) !== 'development'  ) {
 
       // module can be cached, try to find it is already in cache.
       if ( ! $template_part_output = get_transient( $template_part_transient_name ) ) {
@@ -70,7 +75,9 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
         }
       }
     } else {
-      // module is exluded from cache.
+      // module is exluded from cache or we are in development envarioment
+
+      do_action( 'qm/debug', "Module {$template_part_name} bypassed cache." );
 
       // validate that file actually exists.
       if ( file_exists( $template_part_path ) ) {
