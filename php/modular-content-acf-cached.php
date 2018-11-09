@@ -56,7 +56,7 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
      *  If it in cache, we get content to variable. If not in cache, put it in there and to variable.
      *  In both cases, variable is returned in the end of this functon.
      */
-    if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) && getenv( 'WP_ENV' ) !== 'development'  ) {
+    if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) && getenv( 'WP_ENV' ) !== 'development' ) {
 
       // module can be cached, try to find it is already in cache.
       if ( ! $template_part_output = get_transient( $template_part_transient_name ) ) {
