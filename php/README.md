@@ -15,3 +15,4 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 - [Get ongoing and future events](get-events.php)
 - [Custom pagination with numbers only](custom-pagination-numbers-only.php)
 - [Custom pagination with numbers and prev and next links](custom-pagination.php)
+- [Add columns to post listing](add-post-listing-columns.php)
