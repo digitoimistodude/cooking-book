@@ -76,7 +76,7 @@ function siteprefix_maybe_clear_transient_cache() {
   }
 
   // bail if nonce is not there or is invalid.
-  if ( ! isset( $_GET['siteprefix_cache_clear_nonce'] ) || ! wp_verify_nonce( $_GET['siteprefix_cache_clear_nonce'], 'clear_cache' ) ) {
+  if ( ! isset( $_GET['siteprefix_cache_clear_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_GET['siteprefix_cache_clear_nonce'] ), 'clear_cache' ) ) {
     return;
   }
 
