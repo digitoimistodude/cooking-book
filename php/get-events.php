@@ -4,7 +4,7 @@
  * @Author: Timi Wahalahti
  * @Date:   2018-10-17 11:07:20
  * @Last Modified by:   Timi Wahalahti
- * @Last Modified time: 2018-11-10 14:33:36
+ * @Last Modified time: 2018-11-17 17:08:03
  *
  * NOTE: remove transient cache functionality if you don't build any
  * transien cache clearing when event post type posts update.
@@ -128,8 +128,8 @@ function siteprefix_get_events( $amount = 0, $past = false ) {
       if ( empty( $end_day ) || $event_day === $end_day ) {
         $day_str = date( 'j.n.Y', $event_day );
       } else {
-        $start_month = date( 'M', $event_day );
-        $end_month = date( 'M', $end_day );
+        $start_month = date( 'm', $event_day );
+        $end_month = date( 'm', $end_day );
 
         if ( $start_month !== $end_month ) {
           $day_str = date( 'j.n.', $event_day );
