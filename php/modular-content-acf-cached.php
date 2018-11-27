@@ -49,7 +49,7 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
      *
      *  TOOD: differiate use case where same module is used multiple times (add row ID to key)
      */
-    $template_part_transient_name = "modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
+    $template_part_transient_name = "siteprefix_modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
 
     /**
      *  Check if module needs to bypass cache or we are in development envarioment.
@@ -72,12 +72,19 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
 
           // save module to cache.
           set_transient( $template_part_transient_name, $template_part_output, HOUR_IN_SECONDS );
+
+          // add log message in development and staging
+          do_action( 'qm/debug', "Module cached: {$template_part_name} ({$template_part_transient_name})" );
         }
+      } else {
+        // add log message in development and staging
+        do_action( 'qm/debug', "Module served from cache: {$template_part_name} ({$template_part_transient_name})" );
       }
     } else {
       // module is exluded from cache or we are in development envarioment
 
-      do_action( 'qm/debug', "Module {$template_part_name} bypassed cache." );
+      // add log message in development and staging
+      do_action( 'qm/debug', "Module bypassed cache: {$template_part_name} ({$template_part_transient_name})" );
 
       // validate that file actually exists.
       if ( file_exists( $template_part_path ) ) {
