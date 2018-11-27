@@ -59,11 +59,10 @@ function siteprefix_delete_transients_nav() {
 add_action( 'admin_bar_menu', 'siteprefix_adminbar_add_cache_clear_link', 9999 );
 function siteprefix_adminbar_add_cache_clear_link( $wp_admin_bar ) {
   global $wp;
-  $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
   $wp_admin_bar->add_node( array(
     'id'    => 'siteprefixccaheclear',
     'title' => __( 'Clear content cache', 'siteprefix' ),
-    'href'  => wp_nonce_url( add_query_arg( array( 'clear-siteprefix-cache' => true ), $current_url ), 'clear_cache', 'siteprefix_cache_clear_nonce' ),
+    'href'  => wp_nonce_url( add_query_arg( array( 'clear-siteprefix-cache' => true ) ), 'clear_cache', 'siteprefix_cache_clear_nonce' ),
   ) );
 }
 
