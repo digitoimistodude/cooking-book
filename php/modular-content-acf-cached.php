@@ -26,19 +26,22 @@ $have_rows_id = get_the_id();
  *  page for post type (humanmade/page-for-post-type) plugins.
  */
 if ( is_home() ) {
-	$have_rows_id = pll_get_post( get_option( 'page_for_posts' ) );
+  $have_rows_id = pll_get_post( get_option( 'page_for_posts' ) );
 } elseif ( is_post_type_archive() ) {
-	$post_type = get_post_type();
-	$have_rows_id = pll_get_post( get_option( "page_for_{$post_type}" ) );
+  $post_type = get_post_type();
+  $have_rows_id = pll_get_post( get_option( "page_for_{$post_type}" ) );
 }
 
 // check if there is modules.
-if ( have_rows( 'modular_content', $have_rows_id ) ) :
+if ( have_rows( 'modular', $have_rows_id ) ) :
 
-	// loop modules.
-  while ( have_rows( 'modular_content', $have_rows_id ) ) : the_row();
+  // loop modules.
+  while ( have_rows( 'modular', $have_rows_id ) ) : the_row();
 
-  	// make template part name.
+    // defaults
+    $template_part_output = null;
+
+    // make template part name.
     $template_part_name = str_replace( '_', '-', get_row_layout() );
     $template_row_index = get_row_index();
     $template_part_path = get_theme_file_path( "template-parts/modules/{$template_part_name}.php" );
@@ -46,8 +49,6 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
     /**
      *  Make transient key.
      *  Key contains $have_rows_id to differiate modules if same module is used on multiple pages
-     *
-     *  TOOD: differiate use case where same module is used multiple times (add row ID to key)
      */
     $template_part_transient_name = "siteprefix_modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
 
@@ -94,6 +95,10 @@ if ( have_rows( 'modular_content', $have_rows_id ) ) :
         include $template_part_path;
         $template_part_output = ob_get_clean();
       }
+    }
+
+    if ( empty( $template_part_output ) ) {
+      do_action( 'qm/error', "Module {$template_part_name} output is empty" );
     }
 
     // finally output module content.

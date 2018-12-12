@@ -4,7 +4,7 @@
  * @Author: Timi Wahalahti
  * @Date:   2018-10-17 11:07:20
  * @Last Modified by:   Timi Wahalahti
- * @Last Modified time: 2018-11-17 17:08:03
+ * @Last Modified time: 2018-11-28 11:18:02
  *
  * NOTE: remove transient cache functionality if you don't build any
  * transien cache clearing when event post type posts update.
@@ -18,7 +18,7 @@ function siteprefix_get_events( $amount = 0, $past = false ) {
 
   $cache = true;
   $today = date( 'Ymd' );
-  $transient_key = "events{$past_key}_{$today}|{$amount}";
+  $transient_key = "siteprefix_events{$past_key}_{$today}|{$amount}";
 
   if ( getenv( 'WP_ENV' ) === 'development' ) {
     $cache = false;
