@@ -5,8 +5,7 @@
  *
  *  This snippet is suggested to use only if your server and
  *  WordPress installation has redis or some similar software
- *  enabled. Saving modulat content html output to database is
- *  not adviced.
+ *  enabled.
  */
 
 // define what modules se should NOT cache.
@@ -47,10 +46,10 @@ if ( have_rows( 'modular', $have_rows_id ) ) :
     $template_part_path = get_theme_file_path( "template-parts/modules/{$template_part_name}.php" );
 
     /**
-     *  Make transient key.
+     *  Make cache key.
      *  Key contains $have_rows_id to differiate modules if same module is used on multiple pages
      */
-    $template_part_transient_name = "siteprefix_modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
+    $template_part_cache_key = "siteprefix_modular_{$have_rows_id}_{$template_part_name}|{$template_row_index}";
 
     /**
      *  Check if module needs to bypass cache or we are in development envarioment.
@@ -60,7 +59,7 @@ if ( have_rows( 'modular', $have_rows_id ) ) :
     if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) && getenv( 'WP_ENV' ) !== 'development' ) {
 
       // module can be cached, try to find it is already in cache.
-      if ( ! $template_part_output = get_transient( $template_part_transient_name ) ) {
+      if ( ! $template_part_output = wp_cache_get( $template_part_cache_key, 'theme' ) ) {
 
         // module is not in cache.
         // validate that file actually exists.
@@ -72,20 +71,20 @@ if ( have_rows( 'modular', $have_rows_id ) ) :
           $template_part_output = ob_get_clean();
 
           // save module to cache.
-          set_transient( $template_part_transient_name, $template_part_output, HOUR_IN_SECONDS );
+          wp_cache_set( $template_part_cache_key, $template_part_output, 'theme', HOUR_IN_SECONDS );
 
           // add log message in development and staging
-          do_action( 'qm/debug', "Module cached: {$template_part_name} ({$template_part_transient_name})" );
+          do_action( 'qm/debug', "Module cached: {$template_part_name} ({$template_part_cache_key})" );
         }
       } else {
         // add log message in development and staging
-        do_action( 'qm/debug', "Module served from cache: {$template_part_name} ({$template_part_transient_name})" );
+        do_action( 'qm/debug', "Module served from cache: {$template_part_name} ({$template_part_cache_key})" );
       }
     } else {
       // module is exluded from cache or we are in development envarioment
 
       // add log message in development and staging
-      do_action( 'qm/debug', "Module bypassed cache: {$template_part_name} ({$template_part_transient_name})" );
+      do_action( 'qm/debug', "Module bypassed cache: {$template_part_name} ({$template_part_cache_key})" );
 
       // validate that file actually exists.
       if ( file_exists( $template_part_path ) ) {

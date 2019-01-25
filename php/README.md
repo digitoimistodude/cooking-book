@@ -5,6 +5,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 # Table of contents
 
 - [Transient cache clearing](transient-cache-clearing.php)
+- [Redis cache clearing](redis-cache-clearing.php)
 - [Modular content loop with ACF](modular-content-acf.php)
 - [Cached modular content loop with ACF](modular-content-acf-cached.php)
 - [Options page with ACF](options-page-acf.php)
