@@ -17,3 +17,4 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 - [Custom pagination with numbers only](custom-pagination-numbers-only.php)
 - [Custom pagination with numbers and prev and next links](custom-pagination.php)
 - [Add columns to post listing](add-post-listing-columns.php)
+- [Maybe hide wysiwyg editor](maybe-hide-wysiwyg-editor.php)
