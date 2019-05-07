@@ -15,3 +15,6 @@
 
 ### Whatsapp
 `whatsapp://send?text={{CONTENT}} {{URL}}`
+
+### Facebook Messenger
+`fb-messenger://share/?link={{URL}}`
