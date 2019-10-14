@@ -1,11 +1,12 @@
 <?php
 /**
+ * CPT for services.
+ *
  * Registers a new post type
+ *
  * @uses $wp_post_types Inserts new post type object into the list
  *
- * @param string  Post type key, must not exceed 20 characters
- * @param array|string  See optional args description above.
- * @return object|WP_Error the registered post type object, or an error object
+ * @package yourproject
  */
 function yourproject_register_cpt_service() {
 
@@ -28,7 +29,7 @@ function yourproject_register_cpt_service() {
     'labels'              => $labels,
     'hierarchical'        => true,
     'description'         => 'description',
-    'taxonomies'          => array(),
+    'taxonomies'          => array( 'category' ),
     'public'              => true,
     'show_ui'             => true,
     'show_in_menu'        => true,
@@ -41,7 +42,7 @@ function yourproject_register_cpt_service() {
     'has_archive'         => true,
     'query_var'           => true,
     'can_export'          => true,
-    'rewrite'             => true,
+    'rewrite'             => array( 'slug' => 'palvelut' ),    
     'capability_type'     => 'post',
     'supports'            => array(
       'title',
