@@ -15,7 +15,7 @@ Dude's cooking book is a collection of frequently used, quick front and back end
 
 # Module library
 
-[Check out the full list of modules here](List of modules.md).
+[Check out the full list of modules here]("List of modules.md").
 
 # Contributing
 
