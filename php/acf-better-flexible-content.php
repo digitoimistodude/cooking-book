@@ -48,8 +48,8 @@ function siteprefix_acf_admin_head_custom_js_css() { ?>
       height: 300px;
       max-height: 300px;
 
-      width: 500px;
-      max-width: 500px;
+      width: 900px;
+      max-width: 900px;
     }
 
     .acf-module-preview img {
