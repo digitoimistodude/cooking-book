@@ -4,4 +4,6 @@ This page of Dude's cooking book is a collection template-parts under `template-
 
 # Table of contents
 
-- Coming soon
+- [Hero for projects that have sticky hero always on page](hero.php)
+- [Modules](modules)
+  - Coming soon
