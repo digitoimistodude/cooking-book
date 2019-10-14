@@ -1,4 +1,4 @@
-# Module library - full list of modules
+# Full list of modules
 
 ### Upsells: Choose X amount of Custom Post Type posts
 
