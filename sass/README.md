@@ -4,4 +4,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 
 # Table of contents
 
-- [Custom pagination](_custom-pagination.scss)
+- [Features](features)
+  - [Custom pagination](features/_custom-pagination.scss)
+- [Modules](modules)
+  - [Hero](modules/_hero.scss)

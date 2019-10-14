@@ -1,0 +1,12 @@
+.block.block-hero {
+  height: 90rem;
+  display: flex;
+  align-items: center;
+  background-color: $color-default-background;
+
+  @media (min-width: 700px) {
+    .content {
+      width: 50%;
+    }
+  }
+}
