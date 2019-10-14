@@ -5,4 +5,4 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 # Table of contents
 
 - **[Custom Post Type Library](cpt)**
-  - Nothing yet
+  - [Service](cpt/service.php)
