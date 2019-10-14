@@ -7,7 +7,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 - **[Template parts](template-parts)**
   - [Hero for projects that have sticky hero always on page](hero.php)
   - **[Module library](modules)**
-    - Coming soon
+    - [Upsells: Choose X amount of Custom Post Type posts](upsell-choose-cpt.php)
 - Advanced Custom Fields Pro
   - [Options page with ACF](options-page-acf.php)
   - [ACF dynamic svg icon select](acf-dynamic-svg-icon-select.php)
