@@ -4,11 +4,11 @@ Dude's cooking book is a collection of frequently used, quick front and back end
 
 # Table of contents
 
-- [JS snippets](js/README.md)
-- [SCSS snippets](scss/README.md)
-- [PHP snippets](php/README.md)
-- [Larger full functionality snippets containing multiple files](mixed/README.md)
-- [MISC](/misc)
+- [JS snippets](js)
+- [SASS (SCSS) snippets](sass)
+- [PHP snippets](php)
+- [Larger full functionality snippets containing multiple files](mixed)
+- [MISC](misc)
 
 # Other usefull stuff
 - Our colletion of [frequently used CLI commands](https://github.com/digitoimistodude/frequently-used-commands)
