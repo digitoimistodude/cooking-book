@@ -4,4 +4,4 @@ This page of Dude's cooking book is a collection modules under `template-parts/m
 
 # Table of contents
 
-- Coming soon
+- [Upsells: Choose X amount of Custom Post Type posts](upsell-choose-cpt.php)

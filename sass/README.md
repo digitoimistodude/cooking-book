@@ -4,7 +4,11 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 
 # Table of contents
 
+- [Layout](layout)
+  - [Hero](layout/_hero.scss)
+
 - [Features](features)
   - [Custom pagination](features/_custom-pagination.scss)
+
 - [Modules](modules)
-  - [Hero](modules/_hero.scss)
+  - [Upsells: Choose X amount of Custom Post Type posts](modules/_upsell-choose-cpt.scss)

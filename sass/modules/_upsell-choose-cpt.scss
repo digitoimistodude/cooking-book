@@ -1,0 +1,160 @@
+.block.block-upsell-choose-cpt {
+  .col {
+    position: relative;
+
+    h2 {
+      @extend %h4;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .image {
+      @include background-cover();
+      background-color: $color-default-background;
+      height: 22rem;
+      position: relative;
+    }
+  }
+
+  .cols.cols-1 {
+    @include grid(1);
+  }
+
+  .cols.cols-2 {
+    @include grid(2);
+
+    @media (max-width: 510px) {
+      display: block;
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cols.cols-3 {
+    @include grid(3);
+
+    @media (max-width: 840px) {
+      @include grid(2);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 510px) {
+      display: block;
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cols.cols-4 {
+    @include grid(4);
+
+    @media (max-width: 1200px) {
+      @include grid(3);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 840px) {
+      @include grid(2);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 510px) {
+      display: block;
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cols.cols-5 {
+    @include grid(5);
+
+    @media (max-width: 1400px) {
+      @include grid(4);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      @include grid(3);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 840px) {
+      @include grid(2);
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 510px) {
+      display: block;
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

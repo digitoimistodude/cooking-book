@@ -4,4 +4,4 @@ This page of Dude's cooking book is a collection modules under `sass/modules/` u
 
 # Table of contents
 
-- Coming soon
+- [Upsells: Choose X amount of Custom Post Type posts](_upsell-choose-cpt.scss)

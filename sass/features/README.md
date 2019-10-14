@@ -4,4 +4,8 @@ This page contains feature-based SCSS properties. Check out the [the whole cooki
 
 # Table of contents
 
-- [Custom pagination](_custom-pagination.scss)
+- **[Modules](modules)**
+  - [Upsells: Choose X amount of Custom Post Type posts](_upsell-choose-cpt.scss)
+
+- **[Features](features)**
+  - [Custom pagination](_custom-pagination.scss)
