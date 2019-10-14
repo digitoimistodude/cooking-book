@@ -10,7 +10,7 @@ Dude's cooking book is a collection of frequently used, quick front and back end
 - [Larger full functionality snippets containing multiple files](mixed)
 - [MISC](misc)
 
-# Other usefull stuff
+# Other useful stuff
 - Our colletion of [frequently used CLI commands](https://github.com/digitoimistodude/frequently-used-commands)
 
 # Contributing
