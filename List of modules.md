@@ -2,9 +2,9 @@
 
 ### Upsells: Choose X amount of Custom Post Type posts
 
-PHP: [template-parts/modules/upsell-choose-cpt.php](php/template-parts/modules/upsell-choose-cpt.php)
-SASS: [sass/modules/_upsell-choose-cpt.scss](sass/modules/_upsell-choose-cpt.scss)
-IMAGE: [images/acf-modules/upsell_choose_cpt.png](images/acf-modules/upsell_choose_cpt.png)
+- **[PHP:](/php)** [template-parts/modules/upsell-choose-cpt.php](php/template-parts/modules/upsell-choose-cpt.php)
+- **[SASS:](/sass)** [sass/modules/_upsell-choose-cpt.scss](sass/modules/_upsell-choose-cpt.scss)
+- **[IMAGE:](/images)** [images/acf-modules/upsell_choose_cpt.png](images/acf-modules/upsell_choose_cpt.png)
 
 #### Preview:
 
