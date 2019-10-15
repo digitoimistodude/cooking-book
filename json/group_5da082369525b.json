@@ -1,0 +1,82 @@
+{
+    "key": "group_5da082369525b",
+    "title": "Joustava sisältö",
+    "fields": [
+        {
+            "key": "field_5da082400e2c1",
+            "label": "Joustava sisältö",
+            "name": "modular_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5da082944a4e9": {
+                    "key": "layout_5da082944a4e9",
+                    "name": "upsell_choose_cpt",
+                    "label": "Palvelunostot",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da45ffc0395f",
+                            "label": "Valitse näytettävät palvelut",
+                            "name": "selected_upsells",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "service"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": "",
+                            "max": 5,
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Lisää rivi",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1571055220
+}
