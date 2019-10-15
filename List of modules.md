@@ -17,6 +17,8 @@ Add to your global.scss:
 - [Upsells: Choose X amount of Custom Post Type posts](#upsells-choose-x-amount-of-custom-post-type-posts)
 - [Two columns: Fixed amount of 1 or 2 columns, block-title and button](#two-columns-fixed-amount-of-1-or-2-columns-block-title-and-button)
 
+---
+
 ### Upsells: Choose X amount of Custom Post Type posts
 
 - **[PHP:](/php)** [template-parts/modules/upsell-choose-cpt.php](php/template-parts/modules/upsell-choose-cpt.php)
