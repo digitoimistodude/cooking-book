@@ -1,6 +1,6 @@
 # Full list of modules
 
-## [Download acf-json for all modules](/json/modular_content.json)
+## [Download acf-json for all modules](/acf-json/modular_content.json)
 
 # global.scss
 

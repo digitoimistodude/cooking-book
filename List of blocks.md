@@ -24,7 +24,7 @@ General hero.
 - **[PHP:](/php)** [template-parts/hero.php](php/template-parts/hero.php)
 - **[SASS:](/sass)** [sass/layout/_hero.scss](sass/layout/_hero.scss)
 - **[IMAGE:](/images)** [images/hero.png](images/hero.png)
-- **[JSON:](/json)** [json/hero.json](images/hero.json)
+- **[JSON:](/json)** [acf-json/hero.json](images/hero.json)
 
 #### Preview:
 

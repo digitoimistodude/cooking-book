@@ -1,0 +1,58 @@
+{
+    "key": "group_5d7b92b211c60",
+    "title": "Alatunniste",
+    "fields": [
+        {
+            "key": "field_5d7b92bb3a793",
+            "label": "Tekstialue",
+            "name": "text_area",
+            "type": "wysiwyg",
+            "instructions": "Tähän voit laittaa esimerkiksi yhteystiedot. Shift pohjassa saat lyhyemmän välin kappaleiden välille.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5d7f6f3f87b18",
+            "label": "Nappi",
+            "name": "button_footer",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "footer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1571140469
+}
