@@ -5,7 +5,7 @@
  * This is the default hero image for page templates, called
  * 'block'. Strictly air specific.
  *
- * @package yourprojectname
+ * @package yourproject
  */
 
 // Block settings
@@ -22,6 +22,7 @@ if ( has_post_thumbnail() ) {
 
 // Fields
 $hero_description = get_field( 'description' );
+$hero_alignment = get_field( 'hero_alignment' );
 
 if ( get_field( 'button' ) ) {
   $button = get_field( 'button' );
@@ -37,7 +38,7 @@ if ( ! empty( get_field( 'title' ) ) ) {
 }
 ?>
 
-<section class="block block-hero<?php echo esc_attr( $block_class ); ?>"<?php if ( has_post_thumbnail() ) : ?> style="background-image: url('<?php echo esc_url( $featured_image ); ?>');"<?php endif; ?>>
+<section class="block block-hero <?php echo $hero_alignment; echo esc_attr( $block_class ); ?>"<?php if ( has_post_thumbnail() ) : ?> style="background-image: url('<?php echo esc_url( $featured_image ); ?>');"<?php endif; ?>>
 
   <div class="container">
     <div class="content">

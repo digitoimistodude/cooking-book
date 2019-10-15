@@ -4,6 +4,10 @@
   align-items: center;
   background-color: $color-default-background;
 
+  h1 {
+    margin-top: 0;
+  }
+
   @media (min-width: 700px) {
     .content {
       width: 50%;
@@ -17,5 +21,27 @@
   .button-wrapper,
   .button {
     margin-bottom: 0;
+  }
+}
+
+.block.block-alignment-center {
+  justify-content: center;
+  text-align: center;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 120rem;
+  }
+}
+
+.block.block-alignment-right {
+  justify-content: flex-end;
+
+  .content {
+    margin-left: auto;
   }
 }
