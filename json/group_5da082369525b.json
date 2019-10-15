@@ -63,7 +63,7 @@
                             "elements": [
                                 "featured_image"
                             ],
-                            "min": "",
+                            "min": 1,
                             "max": 5,
                             "return_format": "object"
                         },
@@ -187,9 +187,78 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5da59ee86a9d2": {
+                    "key": "layout_5da59ee86a9d2",
+                    "name": "number_columns",
+                    "label": "Numerot",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da59eed6a9d3",
+                            "label": "Palstat",
+                            "name": "numbers",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 5,
+                            "layout": "block",
+                            "button_label": "Lisää palsta",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5da59f096a9d4",
+                                    "label": "Numero",
+                                    "name": "number",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5da59f136a9d5",
+                                    "label": "Numeron alla oleva teksti",
+                                    "name": "number_description",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
-            "button_label": "Lisää rivi",
+            "button_label": "Lisää elementti",
             "min": "",
             "max": ""
         }
@@ -211,5 +280,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1571131308
+    "modified": 1571135618
 }
