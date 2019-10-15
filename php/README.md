@@ -4,8 +4,12 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 
 # Table of contents
 
+- Layout blocks
+  - [Footer](footer.php)
+
 - **[Template parts](template-parts)**
   - **[Module library](template-parts/modules)**
+
 - Advanced Custom Fields Pro
   - [Options page with ACF](options-page-acf.php)
   - [Footer options page with ACF](options-page-footer-acf.php)
