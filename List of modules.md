@@ -30,7 +30,7 @@ Add to your global.scss:
 ### Two columns: Fixed amount of 1 or 2 columns, block-title and button
 
 - **[PHP:](/php)** [template-parts/modules/two-columns.php](php/template-parts/modules/two-columns.php)
-- **[SASS:](/sass)** [sass/modules/_two-columns.scss](sass/modules/_upsell-choose-cpt.scss)
+- **[SASS:](/sass)** [sass/modules/_two-columns.scss](sass/modules/_two-columns.scss)
 - **[IMAGE:](/images)** [images/acf-modules/two_columns.png](images/acf-modules/two_columns.png)
 
 #### Preview:
