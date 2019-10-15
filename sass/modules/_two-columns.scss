@@ -1,0 +1,43 @@
+// These can be general or inside of the module (block)
+.cols.cols-1 {
+  @include grid(1, $gutter_x: 4rem, $gutter_y: 4rem);
+}
+
+.cols.cols-2 {
+  @include grid(2, $gutter_x: 4rem, $gutter_y: 4rem);
+
+  @media (max-width: 510px) {
+    display: block;
+
+    .col {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.block.block-two-columns {
+
+  // Block titles (if this is general, move this to _typography.scss or _general.scss)
+  .block .block-title {
+    @extend %h3;
+    margin-bottom: 5rem;
+  }
+
+  .cols {
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 950px;
+  }
+
+  .block-title,
+  .button-wrapper {
+    text-align: center;
+  }
+}

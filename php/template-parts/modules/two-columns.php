@@ -47,5 +47,9 @@ if ( empty( $col_1 ) && empty( $col_2 ) ) {
 
     </div>
 
+    <?php if ( ! empty( $button ) ) : ?>
+      <p class="button-wrapper"><a class="button button-ghost" href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>"><?php echo $button_title; ?></a></p>
+    <?php endif; ?>
+
   </div>
 </section>
