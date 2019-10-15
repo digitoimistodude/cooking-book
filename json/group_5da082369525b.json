@@ -23,6 +23,22 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5da58f68df22a",
+                            "label": "Nostot",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5da45ffc0395f",
                             "label": "Valitse näytettävät palvelut",
                             "name": "selected_upsells",
@@ -50,6 +66,123 @@
                             "min": "",
                             "max": 5,
                             "return_format": "object"
+                        },
+                        {
+                            "key": "field_5da58f58df229",
+                            "label": "Asettelu",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5da58f86df22b",
+                            "label": "Käytä broken grid-asettelua",
+                            "name": "brokengrid",
+                            "type": "true_false",
+                            "instructions": "Jos haluat että elementti nostetaan ylläolevan elementin päälle, valitse Kyllä.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5da57cad6d2fd": {
+                    "key": "layout_5da57cad6d2fd",
+                    "name": "two_columns",
+                    "label": "Kaksi kappaletta",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da57cce6d2fe",
+                            "label": "Otsikko",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5da57cd66d2ff",
+                            "label": "Kappale 1",
+                            "name": "col_1",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5da57d436d300",
+                            "label": "Kappale 2",
+                            "name": "col_2",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5da57d4e6d301",
+                            "label": "Nappi",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -78,5 +211,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1571055220
+    "modified": 1571131308
 }
