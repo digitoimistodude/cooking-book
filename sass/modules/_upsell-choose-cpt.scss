@@ -1,4 +1,11 @@
 .block.block-upsell-choose-cpt {
+  &.block-brokengrid {
+    @media (min-width: $container-mobile) {
+      margin-top: -140px;
+      background: transparent;
+    }
+  }
+
   .col {
     position: relative;
     border: solid 1px $color-lightgrey;
@@ -28,7 +35,6 @@
 
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 3px 25px -10px rgba(darken($color-shadows, 25%), 1);
     }
   }
 

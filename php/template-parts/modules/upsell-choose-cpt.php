@@ -9,13 +9,14 @@
 
 $title = get_sub_field( 'title' );
 $selected_upsells = get_sub_field( 'selected_upsells' );
+$brokengrid = get_sub_field( 'brokengrid' );
 
 // Bail if no content
 if ( empty( $selected_upsells ) ) {
   return;
 } ?>
 
-<section class="block block-upsell-choose-cpt">
+<section class="block block-upsell-choose-cpt<?php if ( true === $brokengrid ) { echo ' block-brokengrid'; } ?>">
   <div class="container">
 
     <?php if ( ! empty( $title ) ) : ?>
@@ -29,7 +30,6 @@ if ( empty( $selected_upsells ) ) {
         foreach ( $selected_upsells as $upsell ) :
 
         // Fields
-        // This field needs to be setup for the CPT separately
         $short_description = get_field( 'short_description', $upsell->ID );
         ?>
 
