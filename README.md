@@ -12,8 +12,8 @@ Dude's cooking book is a collection of frequently used, quick front and back end
 
 # Building blocks
 
-- ### [Full list of modules](List%20of%20modules.md)
-- ### [Full list of layout blocks](List%20of%20blocks.md)
+- **[Full list of modules](List%20of%20modules.md)**
+- **[Full list of layout blocks](List%20of%20blocks.md)**
 
 # Other useful stuff
 - Our colletion of [frequently used CLI commands](https://github.com/digitoimistodude/frequently-used-commands)
