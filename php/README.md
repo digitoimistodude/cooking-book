@@ -8,6 +8,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
   - **[Module library](template-parts/modules)**
 - Advanced Custom Fields Pro
   - [Options page with ACF](options-page-acf.php)
+  - [Footer options page with ACF](options-page-footer-acf.php)
   - [ACF dynamic svg icon select](acf-dynamic-svg-icon-select.php)
   - [ACF Repeater field snippet](acf-repeater.php) 
   - [Better ACF flexible content editing experience](acf-better-flexible-content.php)
