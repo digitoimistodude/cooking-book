@@ -10,3 +10,4 @@ This page of Dude's cooking book is a collection modules under `template-parts/m
 
 - [Upsells: Choose X amount of Custom Post Type posts](upsell-choose-cpt.php)
 - [Two columns: Fixed amount of 1 or 2 columns, block-title and button](two-columns.php)
+- [Number columns: 1-5 numbers and their descriptions](number-columns.php)
