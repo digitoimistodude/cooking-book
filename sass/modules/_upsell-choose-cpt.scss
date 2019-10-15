@@ -1,9 +1,14 @@
 .block.block-upsell-choose-cpt {
   .col {
     position: relative;
+    border: solid 1px $color-lightgrey;
+    background-color: $color-white;
+    transition: all $transition-duration;
 
     h2 {
-      @extend %h4;
+      font-size: 24px;
+      margin-top: 1rem;
+      margin-bottom: 0;
     }
 
     a {
@@ -15,6 +20,15 @@
       background-color: $color-default-background;
       height: 22rem;
       position: relative;
+    }
+
+    .content {
+      padding: 3rem 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 3px 25px -10px rgba(darken($color-shadows, 25%), 1);
     }
   }
 
