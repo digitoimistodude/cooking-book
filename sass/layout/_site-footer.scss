@@ -1,0 +1,81 @@
+// ------------------------------------------------------------
+// Site footer
+//
+// The very bottom of the site. Usually contains supporting
+// or secondary navigation, social media icons, contact details
+// and such.
+// ------------------------------------------------------------
+
+.site-footer {
+  background: $color-white;
+  padding: 0;
+  text-align: center;
+
+  .contact-information {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    p {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .button-wrapper {
+    margin-bottom: 0;
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+
+  .social-media {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    li {
+      padding: 0;
+      margin: 0;
+      width: 5rem;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+    }
+  }
+
+  .social-media svg {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .social-media li:first-of-type {
+    margin-right: .5rem;
+  }
+
+  .social-media a {
+    transition: all $transition-duration;
+  }
+
+  .social-media a:hover {
+    opacity: .5;
+  }
+
+  .bottom-link {
+    margin-bottom: 0;
+    opacity: 1;
+
+    a {
+      color: $color-white;
+      text-decoration: underline;
+      opacity: .7;
+    }
+
+    a:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+}
