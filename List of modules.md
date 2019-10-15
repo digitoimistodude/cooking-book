@@ -2,6 +2,10 @@
 
 ## [Download acf-json for all modules](/json/group_5da082369525b.json)
 
+# Table of contents
+
+- [Upsells: Choose X amount of Custom Post Type posts](#upsells-choose-x-amount-of-custom-post-type-posts)
+
 ### Upsells: Choose X amount of Custom Post Type posts
 
 - **[PHP:](/php)** [template-parts/modules/upsell-choose-cpt.php](php/template-parts/modules/upsell-choose-cpt.php)
