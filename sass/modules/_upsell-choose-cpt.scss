@@ -35,6 +35,7 @@
 
     &:hover {
       transform: scale(1.05);
+      box-shadow: 0 3px 25px -10px rgba(darken($color-shadows, 25%), 1);
     }
   }
 
@@ -130,18 +131,6 @@
     @include grid(5);
 
     @media (max-width: 1400px) {
-      @include grid(4);
-
-      .col {
-        margin-bottom: 3rem;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    @media (max-width: 1200px) {
       @include grid(3);
 
       .col {
