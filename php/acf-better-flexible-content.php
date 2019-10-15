@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Better Flexible Content field with image previews, title and module name.
+ */
 add_action( 'acf/input/admin_head', 'siteprefix_acf_admin_head_custom_js_css' );
 function siteprefix_acf_admin_head_custom_js_css() { ?>
   <style>
