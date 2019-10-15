@@ -1,7 +1,5 @@
 # Full list of blocks (layout)
 
-## [Download acf-json for layout blocks](/json/group_5da082369525b.json)
-
 # global.scss
 
 Rest of the basic blocks can be found in [air-light theme](https://github.com/digitoimistodude/air-light).
@@ -26,6 +24,7 @@ General hero.
 - **[PHP:](/php)** [template-parts/hero.php](php/template-parts/hero.php)
 - **[SASS:](/sass)** [sass/layout/_hero.scss](sass/layout/_hero.scss)
 - **[IMAGE:](/images)** [images/hero.png](images/hero.png)
+- **[JSON:](/json)** [json/hero.json](images/hero.json)
 
 #### Preview:
 
