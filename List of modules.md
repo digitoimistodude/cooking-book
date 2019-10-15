@@ -25,7 +25,7 @@ Add to your global.scss:
 
 #### Preview:
 
-![two_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/two_columns.png  "two_columns")
+![upsell_choose_cpt](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/upsell_choose_cpt.png  "upsell_choose_cpt")
 
 ### Two columns: Fixed amount of 1 or 2 columns, block-title and button
 
