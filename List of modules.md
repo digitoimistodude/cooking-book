@@ -2,6 +2,16 @@
 
 ## [Download acf-json for all modules](/json/group_5da082369525b.json)
 
+# Global.scss
+
+Add to your global.scss:
+
+``` scss
+// Modules
+@import '../modules/upsell-choose-cpt';
+@import '../modules/two-columns';
+```
+
 # Table of contents
 
 - [Upsells: Choose X amount of Custom Post Type posts](#upsells-choose-x-amount-of-custom-post-type-posts)

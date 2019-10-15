@@ -7,6 +7,7 @@
  * @package yourproject
  */
 
+// Fields
 $title = get_sub_field( 'title' );
 $selected_upsells = get_sub_field( 'selected_upsells' );
 
@@ -16,7 +17,6 @@ if ( empty( $selected_upsells ) ) {
 } ?>
 
 <section class="block block-upsell-choose-cpt">
-
   <div class="container">
 
     <?php if ( ! empty( $title ) ) : ?>
@@ -44,5 +44,4 @@ if ( empty( $selected_upsells ) ) {
     </div>
 
   </div>
-
 </section>

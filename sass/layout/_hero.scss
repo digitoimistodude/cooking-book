@@ -9,4 +9,13 @@
       width: 50%;
     }
   }
+
+  p:not(.button-wrapper) {
+    @include responsive-font($font-min-size, 26px);
+  }
+
+  .button-wrapper,
+  .button {
+    margin-bottom: 0;
+  }
 }
