@@ -29,6 +29,8 @@ Add to your global.scss:
 
 ![upsell_choose_cpt](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/upsell_choose_cpt.png  "upsell_choose_cpt")
 
+---
+
 ### Two columns: Fixed amount of 1 or 2 columns, block-title and button
 
 - **[PHP:](/php)** [template-parts/modules/two-columns.php](php/template-parts/modules/two-columns.php)
