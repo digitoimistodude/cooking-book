@@ -4,7 +4,7 @@ This page of Dude's cooking book is a collection modules under `template-parts/m
 
 # Module library
 
-[Check out the full, graphical list of modules here](List%20of%20modules.md).
+[Check out the full, graphical list of modules here](/List%20of%20modules.md).
 
 # Table of contents
 
