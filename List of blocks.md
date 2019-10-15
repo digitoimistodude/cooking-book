@@ -31,6 +31,8 @@ General hero.
 
 ![hero](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/hero.png  "hero")
 
+---
+
 ### Footer with contact details and social media icons
 
 General footer.
