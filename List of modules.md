@@ -2,7 +2,7 @@
 
 ## [Download acf-json for all modules](/json/group_5da082369525b.json)
 
-# Global.scss
+# global.scss
 
 Add to your global.scss:
 
