@@ -4,9 +4,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
 
 # Table of contents
 
-- Layout blocks
-  - [Footer](footer.php)
-
+- [**Layout blocks**](/List%20of%20blocks.md)
 - **[Template parts](template-parts)**
   - **[Module library](template-parts/modules)**
 
