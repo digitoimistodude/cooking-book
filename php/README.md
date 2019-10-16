@@ -29,8 +29,8 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
   - [Get ongoing and future events](get-events.php)
 
 - Layout
-  - [Custom pagination with numbers only](custom-pagination-numbers-only.php)
-  - [Custom pagination with numbers and prev and next links](custom-pagination.php)
+  - [Custom pagination with numbers only](custom-pagination-numbers-only.php) ([grab CSS](https://github.com/digitoimistodude/cooking-book/blob/master/sass/features/_custom-pagination.scss))
+  - [Custom pagination with numbers and prev and next links](custom-pagination.php) ([grab CSS](https://github.com/digitoimistodude/cooking-book/blob/master/sass/features/_custom-pagination.scss))
   - [Add columns to post listing](add-post-listing-columns.php)
 
 - WP-Admin and Custom Post Types
