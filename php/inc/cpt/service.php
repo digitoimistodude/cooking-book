@@ -6,23 +6,23 @@
  *
  * @uses $wp_post_types Inserts new post type object into the list
  *
- * @package yourproject
+ * @package siteprefix
  */
-function yourproject_register_cpt_service() {
+function siteprefix_register_cpt_service() {
 
   $labels = array(
-    'name'               => __( 'Palvelut', 'yourproject' ),
-    'singular_name'      => __( 'Palvelu', 'yourproject' ),
-    'add_new'            => __( 'Lisää uusi palvelu', 'yourproject' ),
-    'add_new_item'       => __( 'Lisää uusi palvelu', 'yourproject' ),
-    'edit_item'          => __( 'Muokkaa palvelua', 'yourproject' ),
-    'new_item'           => __( 'Uusi palvelu', 'yourproject' ),
-    'view_item'          => __( 'Näytä palvelu', 'yourproject' ),
-    'search_items'       => __( 'Hae palveluita', 'yourproject' ),
-    'not_found'          => __( 'Palveluita ei löytynyt', 'yourproject' ),
-    'not_found_in_trash' => __( 'Palveluita ei löytynyt roskista', 'yourproject' ),
-    'parent_item_colon'  => __( 'Yläpalvelu:', 'yourproject' ),
-    'menu_name'          => __( 'Palvelut', 'yourproject' ),
+    'name'               => __( 'Palvelut', 'siteprefix' ),
+    'singular_name'      => __( 'Palvelu', 'siteprefix' ),
+    'add_new'            => __( 'Lisää uusi palvelu', 'siteprefix' ),
+    'add_new_item'       => __( 'Lisää uusi palvelu', 'siteprefix' ),
+    'edit_item'          => __( 'Muokkaa palvelua', 'siteprefix' ),
+    'new_item'           => __( 'Uusi palvelu', 'siteprefix' ),
+    'view_item'          => __( 'Näytä palvelu', 'siteprefix' ),
+    'search_items'       => __( 'Hae palveluita', 'siteprefix' ),
+    'not_found'          => __( 'Palveluita ei löytynyt', 'siteprefix' ),
+    'not_found_in_trash' => __( 'Palveluita ei löytynyt roskista', 'siteprefix' ),
+    'parent_item_colon'  => __( 'Yläpalvelu:', 'siteprefix' ),
+    'menu_name'          => __( 'Palvelut', 'siteprefix' ),
   );
 
   $args = array(
@@ -57,4 +57,4 @@ function yourproject_register_cpt_service() {
   register_post_type( 'service', $args );
 }
 
-add_action( 'init', 'yourproject_register_cpt_service' );
+add_action( 'init', 'siteprefix_register_cpt_service' );

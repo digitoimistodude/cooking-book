@@ -4,7 +4,7 @@
  *
  * Module that shows some informative numbers in columns.
  *
- * @package yourproject
+ * @package siteprefix
  */
 
 $numbers = get_sub_field( 'numbers' );

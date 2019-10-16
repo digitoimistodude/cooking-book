@@ -4,7 +4,7 @@
  *
  * Module that adds two columns.
  *
- * @package yourproject
+ * @package siteprefix
  */
 
 // Fields

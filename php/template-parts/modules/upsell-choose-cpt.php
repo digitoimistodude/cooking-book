@@ -4,7 +4,7 @@
  *
  * Module that enables choosing custom amount of CPT content to upsells.
  *
- * @package yourproject
+ * @package siteprefix
  */
 
 $title = get_sub_field( 'title' );
@@ -45,7 +45,7 @@ if ( empty( $selected_upsells ) ) {
               <p class="short-description"><?php echo $short_description; ?></p>
             <?php endif; ?>
 
-            <p class="read-more-link"><a href="<?php echo get_permalink( $upsell ); ?>"><?php esc_html_e( 'Lue lisää', 'yourproject' ); ?> &gt;</a></p>
+            <p class="read-more-link"><a href="<?php echo get_permalink( $upsell ); ?>"><?php esc_html_e( 'Lue lisää', 'siteprefix' ); ?> &gt;</a></p>
           </div>
         </div>
 
