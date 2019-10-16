@@ -88,6 +88,29 @@
             "endpoint": 0
         },
         {
+            "key": "field_5da6e6351ab7c",
+            "label": "Tyyli",
+            "name": "hero_style",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "block-hero-low-without-bg": "Matala, ei taustakuvaa",
+                "block-hero-low-with-bg": "Matala, taustakuvalla",
+                "block-hero-fullheight-with-bg": "Korkea, taustakuvalla"
+            },
+            "allow_null": 0,
+            "default_value": "block-hero-low-without-bg",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5da5cbf6dedac",
             "label": "Sijainti",
             "name": "hero_alignment",
@@ -135,5 +158,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1571146854
+    "modified": 1571219214
 }

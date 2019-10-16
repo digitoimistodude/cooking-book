@@ -1,8 +1,26 @@
 .block.block-hero {
-  height: 90rem;
   display: flex;
   align-items: center;
-  background-color: $color-default-background;
+
+  &.block-hero-fullheight-with-bg {
+    background-color: $color-default-background;
+    height: 90rem;
+  }
+
+  &.block-hero-low-with-bg {
+    background-color: $color-default-background;
+  }
+
+  &.block-hero-low-without-bg {
+    background: $color-white;
+  }
+
+  &.block-hero-low-without-bg,
+  &.block-hero-low-with-bg {
+    height: auto;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+  }
 
   h1 {
     margin-top: 0;
@@ -34,7 +52,11 @@
 
   .content {
     width: 100%;
-    max-width: 120rem;
+    max-width: 90rem;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
   }
 }
 
