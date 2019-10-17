@@ -30,13 +30,13 @@
   a.page-numbers:hover {
     background: $color-links;
     border-color: $color-links;
-    color: #fff;
+    color: $color-white;
   }
 
   .page-numbers.current {
     background: $color-links;
     border-color: $color-links;
-    color: #fff;
+    color: $color-white;
   }
 
   // Remove this if you are using version with next/prev
