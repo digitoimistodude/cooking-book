@@ -4,4 +4,5 @@ This page of Dude's cooking book is a collection of frequently used code snippet
 
 # Table of contents
 
+- [Search with rest API and Mithril.js](search-rest-mithril)
 - [Search with rest API and Vue.js](search-rest-vue)
