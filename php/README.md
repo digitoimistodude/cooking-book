@@ -12,10 +12,13 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
   - [Options page with ACF](options-page-acf.php)
   - [Footer options page with ACF](options-page-footer-acf.php)
   - [ACF dynamic svg icon select](acf-dynamic-svg-icon-select.php)
-  - [ACF Repeater field snippet](acf-repeater.php) 
+  - [ACF Repeater field snippet](acf-repeater.php)
   - [Better ACF flexible content editing experience](acf-better-flexible-content.php)
   - [Modular content loop with ACF](modular-content-acf.php)
   - [Cached modular content loop with ACF](modular-content-acf-cached.php)
+
+- Getting content
+  - [Persons lst by category/team](persons-list-by-category.php)
 
 - Cache
   - [Get and cache from page using spesfic template](get-content-from-page-using-template.php)
