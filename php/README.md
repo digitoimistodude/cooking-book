@@ -29,6 +29,7 @@ This page of Dude's cooking book is a collection of frequently used, quick WordP
   - [Make human readable date string (start and end)](make-date-string.php)
 
 - Events
+  - [Use pre_get_posts filter to get ongoign and future events](filter-events.php)
   - [Get ongoing and future events](get-events.php)
 
 - Layout
