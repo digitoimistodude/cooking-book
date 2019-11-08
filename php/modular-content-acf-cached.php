@@ -59,7 +59,7 @@ if ( have_rows( 'modular', $have_rows_id ) ) :
     if ( ! array_key_exists( $template_part_name, $exclude_template_part_from_cache ) && getenv( 'WP_ENV' ) !== 'development' ) {
 
       // module can be cached, try to find it is already in cache.
-      if ( ! $template_part_output = wp_cache_get( $template_part_cache_key, 'theme' ) ) {
+      if ( $template_part_output !== wp_cache_get( $template_part_cache_key, 'theme' ) ) {
 
         // module is not in cache.
         // validate that file actually exists.
