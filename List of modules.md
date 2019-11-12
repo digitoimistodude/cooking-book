@@ -11,6 +11,7 @@ Add to your global.scss:
 @import '../modules/upsell-choose-cpt';
 @import '../modules/two-columns';
 @import '../modules/number-columns';
+@import '../modules/text-image-columns';
 ```
 
 # Table of contents
