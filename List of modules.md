@@ -70,7 +70,7 @@ Image and text side by side, option to choose which side is which.
 
 - **[PHP:](/php)** [template-parts/modules/text-image-columns.php](php/template-parts/modules/text-image-columns.php)
 - **[SASS:](/sass)** [sass/modules/_text-image-columns.scss](sass/modules/_text-image-columns.scss)
-- **[IMAGE:](/images)** [images/acf-modules/text-image-columns.png](images/acf-modules/text-image-columns.png)
+- **[IMAGE:](/images)** [images/acf-modules/text_image_columns.png](images/acf-modules/text_image_columns.png)
 
 #### Preview:
 
