@@ -18,6 +18,7 @@ Add to your global.scss:
 - [Upsells: Choose X amount of Custom Post Type posts](#upsells-choose-x-amount-of-custom-post-type-posts)
 - [Two columns: Fixed amount of 1 or 2 columns, block-title and button](#two-columns-fixed-amount-of-1-or-2-columns-block-title-and-button)
 - [Number columns: 1-5 numbers and their descriptions](#number-columns-1-5-numbers-and-their-descriptions)
+- [Text & Image columns, even odd](#text-image-columns-even-odd)
 ---
 
 ### Upsells: Choose X amount of Custom Post Type posts
@@ -59,3 +60,17 @@ Infographic numbers (1-5) and their descriptions in a responsive column grid lay
 #### Preview:
 
 ![number_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/number_columns.png  "number_columns")
+
+---
+
+### Text & image columns, even odd
+
+Image and text side by side, option to choose which side is which.
+
+- **[PHP:](/php)** [template-parts/modules/text-image-columns.php](php/template-parts/modules/text-image-columns.php)
+- **[SASS:](/sass)** [sass/modules/_text-image-columns.scss](sass/modules/_text-image-columns.scss)
+- **[IMAGE:](/images)** [images/acf-modules/text-image-columns.png](images/acf-modules/text-image-columns.png)
+
+#### Preview:
+
+![text_image_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/text_image_columns.png  "text_image_columns")

@@ -1,0 +1,40 @@
+.block.block-text-image-columns {
+  .cols.cols-image-left {
+    .col.col-image {
+      order: 1;
+    }
+
+    .col.col-text {
+      order: 2;
+    }
+  }
+
+  .cols.cols-2 {
+    @include grid(2, $gutter_x: 150px, $gutter_y: 150px);
+
+    @media (max-width: 510px) {
+      display: block;
+
+      .col {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .col-image {
+    background-color: $color-default-background;
+    position: relative;
+    min-height: 50rem;
+  }
+
+  .image {
+    @include background-cover();
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
