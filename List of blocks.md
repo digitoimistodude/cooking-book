@@ -40,7 +40,7 @@ General footer.
 - **[PHP:](/php)** [footer.php](php/footer.php), [footer-options-page.php](php/footer-options-page.php) (to functions.php or acf.php)
 - **[SASS:](/sass)** [sass/layout/_site-footer.scss](sass/layout/_site-footer.scss)
 - **[JSON:](/json)** [acf-json/footer.json](acf-json/footer.json)
-- **[SVG:](/svg)** [svg/instagram.svg](svg/instagram.svg), [svg/linkedin.svg](svg/linkedin.svg), [svg/twitter.svg](svg/twitter.svg), [svg/facebook.svg](svg/facebook.svg)
+- **[SVG:](/svg)** [svg/instagram.svg](svg/instagram.svg), [svg/linkedin.svg](svg/linkedin.svg), [svg/twitter.svg](svg/twitter.svg), [svg/facebook.svg](svg/facebook.svg), [svg/youtube.svg](svg/youtube.svg)
 
 #### Preview:
 
