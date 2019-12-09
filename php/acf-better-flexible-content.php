@@ -71,7 +71,6 @@ function siteprefix_acf_admin_head_custom_js_css() { ?>
       var timer;
 
       // do not show flexible content or row field before opening, excluding new items
-      $('.acf-repeater.-row .acf-row:not(.acf-clone)').addClass('-collapsed');
       $('.acf-flexible-content .layout:not(.acf-clone)').addClass('-collapsed');
       $('#acf-flexible-content-collapse').detach();
 
