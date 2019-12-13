@@ -32,7 +32,7 @@ Allows user to select from 1 to 5 CPT items (for example services) and show them
 
 #### Preview:
 
-![upsell_choose_cpt](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/upsell_choose_cpt.png?token=AALWRRS6BMMFQHXZNOD35RK57R7FA "upsell_choose_cpt")
+![upsell_choose_cpt](https://i.imgur.com/gohC6VU.png "upsell_choose_cpt")
 
 ---
 
@@ -46,7 +46,7 @@ Allows user to enter centered title and button for block and show two columns fo
 
 #### Preview:
 
-![two_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/two_columns.png?token=AALWRRS6BMMFQHXZNOD35RK57R7FA "two_columns")
+![two_columns](https://i.imgur.com/dZGBhfR.png "two_columns")
 
 ---
 
@@ -60,7 +60,7 @@ Infographic numbers (1-5) and their descriptions in a responsive column grid lay
 
 #### Preview:
 
-![number_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/number_columns.png?token=AALWRRS6BMMFQHXZNOD35RK57R7FA "number_columns")
+![number_columns](https://i.imgur.com/TqqgKhO.png "number_columns")
 
 ---
 
@@ -74,4 +74,4 @@ Image and text side by side, option to choose which side is which.
 
 #### Preview:
 
-![text_image_columns](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/acf-modules/text_image_columns.png?token=AALWRRS6BMMFQHXZNOD35RK57R7FA "text_image_columns")
+![text_image_columns](https://i.imgur.com/vD52xie.png "text_image_columns")
