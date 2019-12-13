@@ -12,6 +12,7 @@ Add to your global.scss:
 @import '../modules/two-columns';
 @import '../modules/number-columns';
 @import '../modules/text-image-columns';
+@import '../modules/title-and-text';
 ```
 
 # Table of contents
@@ -20,6 +21,7 @@ Add to your global.scss:
 - [Two columns: Fixed amount of 1 or 2 columns, block-title and button](#two-columns-fixed-amount-of-1-or-2-columns-block-title-and-button)
 - [Number columns: 1-5 numbers and their descriptions](#number-columns-1-5-numbers-and-their-descriptions)
 - [Text & Image columns, even odd](#text--image-columns-even-odd)
+- [Title & Text](#title-and-text)
 ---
 
 ### Upsells: Choose X amount of Custom Post Type posts
@@ -75,3 +77,19 @@ Image and text side by side, option to choose which side is which.
 #### Preview:
 
 ![text_image_columns](https://i.imgur.com/vD52xie.png "text_image_columns")
+
+---
+
+### Title & Text
+
+Free text module with options.
+
+- **[PHP:](/php)** [template-parts/modules/title-and-text.php](php/template-parts/modules/title-and-text.php)
+- **[SASS:](/sass)** [sass/modules/_title-and-text.scss](sass/modules/_title-and-text.scss)
+
+#### Previews:
+
+![title_and_text](https://i.imgur.com/IkIkilz.png "title_and_text")
+![title_and_text](https://i.imgur.com/0ijKt8q.png "title_and_text")
+![title_and_text](https://i.imgur.com/18J8Ikl.png "title_and_text")
+![title_and_text](https://i.imgur.com/v4gm44f.png "title_and_text")

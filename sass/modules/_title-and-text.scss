@@ -1,0 +1,22 @@
+.block.block-title-and-text {
+  background: $color-somegrey;
+  text-align: center;
+
+  &.has-white-bg-color {
+    background: $color-white;
+  }
+
+  &.is-aligned-left {
+    text-align: left;
+  }
+
+  .block-title {
+    margin-top: 0;
+  }
+
+  .container .content {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
