@@ -21,7 +21,7 @@ Add to your global.scss:
 - [Two columns: Fixed amount of 1 or 2 columns, block-title and button](#two-columns-fixed-amount-of-1-or-2-columns-block-title-and-button)
 - [Number columns: 1-5 numbers and their descriptions](#number-columns-1-5-numbers-and-their-descriptions)
 - [Text & Image columns, even odd](#text--image-columns-even-odd)
-- [Title & Text](#title-and-text)
+- [Title & Text](#title--text)
 ---
 
 ### Upsells: Choose X amount of Custom Post Type posts
