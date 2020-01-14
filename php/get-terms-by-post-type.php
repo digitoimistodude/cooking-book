@@ -1,3 +1,4 @@
+<?php
 /**
  * Get all terms which have articles with certain post type
  * linked to them. Uses a transient because of a possibly slow tax query.
