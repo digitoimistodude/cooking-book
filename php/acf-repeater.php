@@ -1,7 +1,7 @@
 <?php if ( have_rows( 'repeater' ) ) :
   while ( have_rows( 'repeater' ) ) : the_row();
 
-        // Fields
+    // Fields
     $repeater_image = get_sub_field( 'repeater_image' );
     $repeater_title = get_sub_field( 'repeater_title' )
 
