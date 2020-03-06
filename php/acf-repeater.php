@@ -3,7 +3,7 @@
 
     // Fields
     $repeater_image = get_sub_field( 'repeater_image' );
-    $repeater_title = get_sub_field( 'repeater_title' )
+    $repeater_title = get_sub_field( 'repeater_title' );
 
     if ( ! empty( $repeater_title ) ) : ?>
       <h2><?php echo esc_attr( $repeater_title ); ?></h2>
