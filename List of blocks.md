@@ -29,7 +29,7 @@ General hero.
 
 #### Preview:
 
-![hero](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/hero.png  "hero")
+![hero](https://github.com/digitoimistodude/cooking-book/raw/master/images/hero.png "hero")
 
 ---
 
@@ -44,4 +44,4 @@ General footer.
 
 #### Preview:
 
-![footer](https://raw.githubusercontent.com/digitoimistodude/cooking-book/master/images/footer.png  "footer")
+![footer](https://github.com/digitoimistodude/cooking-book/raw/master/images/footer.png "footer")
