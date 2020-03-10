@@ -1,411 +1,497 @@
-[
-    {
-        "key": "group_5da082369525b",
-        "title": "Joustava sisältö",
-        "fields": [
-            {
-                "key": "field_5da082400e2c1",
-                "label": "Joustava sisältö",
-                "name": "modular_content",
-                "type": "flexible_content",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
+{
+    "key": "group_5da082369525b",
+    "title": "Joustava sisältö",
+    "fields": [
+        {
+            "key": "field_5da082400e2c1",
+            "label": "Joustava sisältö",
+            "name": "modular_content",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5da082944a4e9": {
+                    "key": "layout_5da082944a4e9",
+                    "name": "upsell_choose_cpt",
+                    "label": "Palvelunostot",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da58f68df22a",
+                            "label": "Nostot",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5da45ffc0395f",
+                            "label": "Valitse näytettävät palvelut",
+                            "name": "selected_upsells",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "service"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 1,
+                            "max": 5,
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_5da58f58df229",
+                            "label": "Asettelu",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5da58f86df22b",
+                            "label": "Käytä broken grid-asettelua",
+                            "name": "brokengrid",
+                            "type": "true_false",
+                            "instructions": "Jos haluat että elementti nostetaan ylläolevan elementin päälle, valitse Kyllä.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 },
-                "layouts": {
-                    "layout_5da082944a4e9": {
-                        "key": "layout_5da082944a4e9",
-                        "name": "upsell_choose_cpt",
-                        "label": "Palvelunostot",
-                        "display": "block",
-                        "sub_fields": [
-                            {
-                                "key": "field_5da58f68df22a",
-                                "label": "Nostot",
-                                "name": "",
-                                "type": "tab",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "placement": "top",
-                                "endpoint": 0
+                "layout_5da57cad6d2fd": {
+                    "key": "layout_5da57cad6d2fd",
+                    "name": "two_columns",
+                    "label": "Kaksi kappaletta",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da57cce6d2fe",
+                            "label": "Otsikko",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5da45ffc0395f",
-                                "label": "Valitse näytettävät palvelut",
-                                "name": "selected_upsells",
-                                "type": "relationship",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "post_type": [
-                                    "service"
-                                ],
-                                "taxonomy": "",
-                                "filters": [
-                                    "search",
-                                    "post_type",
-                                    "taxonomy"
-                                ],
-                                "elements": [
-                                    "featured_image"
-                                ],
-                                "min": 1,
-                                "max": 5,
-                                "return_format": "object"
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5da57cd66d2ff",
+                            "label": "Kappale 1",
+                            "name": "col_1",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5da58f58df229",
-                                "label": "Asettelu",
-                                "name": "",
-                                "type": "tab",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "placement": "top",
-                                "endpoint": 0
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5da57d436d300",
+                            "label": "Kappale 2",
+                            "name": "col_2",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5da58f86df22b",
-                                "label": "Käytä broken grid-asettelua",
-                                "name": "brokengrid",
-                                "type": "true_false",
-                                "instructions": "Jos haluat että elementti nostetaan ylläolevan elementin päälle, valitse Kyllä.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "message": "",
-                                "default_value": 0,
-                                "ui": 1,
-                                "ui_on_text": "",
-                                "ui_off_text": ""
-                            }
-                        ],
-                        "min": "",
-                        "max": ""
-                    },
-                    "layout_5da57cad6d2fd": {
-                        "key": "layout_5da57cad6d2fd",
-                        "name": "two_columns",
-                        "label": "Kaksi kappaletta",
-                        "display": "block",
-                        "sub_fields": [
-                            {
-                                "key": "field_5da57cce6d2fe",
-                                "label": "Otsikko",
-                                "name": "title",
-                                "type": "text",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": "",
-                                "prepend": "",
-                                "append": "",
-                                "maxlength": ""
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5da57d4e6d301",
+                            "label": "Nappi",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5da57cd66d2ff",
-                                "label": "Kappale 1",
-                                "name": "col_1",
-                                "type": "wysiwyg",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "50",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "tabs": "all",
-                                "toolbar": "full",
-                                "media_upload": 1,
-                                "delay": 0
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5da59ee86a9d2": {
+                    "key": "layout_5da59ee86a9d2",
+                    "name": "number_columns",
+                    "label": "Numerot",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5da59eed6a9d3",
+                            "label": "Palstat",
+                            "name": "numbers",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5da57d436d300",
-                                "label": "Kappale 2",
-                                "name": "col_2",
-                                "type": "wysiwyg",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "50",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "tabs": "all",
-                                "toolbar": "full",
-                                "media_upload": 1,
-                                "delay": 0
-                            },
-                            {
-                                "key": "field_5da57d4e6d301",
-                                "label": "Nappi",
-                                "name": "button",
-                                "type": "link",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "return_format": "array"
-                            }
-                        ],
-                        "min": "",
-                        "max": ""
-                    },
-                    "layout_5da59ee86a9d2": {
-                        "key": "layout_5da59ee86a9d2",
-                        "name": "number_columns",
-                        "label": "Numerot",
-                        "display": "block",
-                        "sub_fields": [
-                            {
-                                "key": "field_5da59eed6a9d3",
-                                "label": "Palstat",
-                                "name": "numbers",
-                                "type": "repeater",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "collapsed": "",
-                                "min": 1,
-                                "max": 5,
-                                "layout": "block",
-                                "button_label": "Lisää palsta",
-                                "sub_fields": [
-                                    {
-                                        "key": "field_5da59f096a9d4",
-                                        "label": "Numero",
-                                        "name": "number",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        },
-                                        "default_value": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "maxlength": ""
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 5,
+                            "layout": "block",
+                            "button_label": "Lisää palsta",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5da59f096a9d4",
+                                    "label": "Numero",
+                                    "name": "number",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
                                     },
-                                    {
-                                        "key": "field_5da59f136a9d5",
-                                        "label": "Numeron alla oleva teksti",
-                                        "name": "number_description",
-                                        "type": "textarea",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        },
-                                        "default_value": "",
-                                        "placeholder": "",
-                                        "maxlength": "",
-                                        "rows": 2,
-                                        "new_lines": ""
-                                    }
-                                ]
-                            }
-                        ],
-                        "min": "",
-                        "max": ""
-                    },
-                    "layout_5dca76fac952b": {
-                        "key": "layout_5dca76fac952b",
-                        "name": "text_image_columns",
-                        "label": "Teksti + Kuva",
-                        "display": "block",
-                        "sub_fields": [
-                            {
-                                "key": "field_5dca7703c952c",
-                                "label": "Asettelu",
-                                "name": "",
-                                "type": "tab",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 },
-                                "placement": "top",
-                                "endpoint": 0
-                            },
-                            {
-                                "key": "field_5dca77111a6b6",
-                                "label": "Otsikko",
-                                "name": "title",
-                                "type": "text",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": "",
-                                "prepend": "",
-                                "append": "",
-                                "maxlength": ""
-                            },
-                            {
-                                "key": "field_5dca77181a6b7",
-                                "label": "Teksti",
-                                "name": "text",
-                                "type": "wysiwyg",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "tabs": "all",
-                                "toolbar": "full",
-                                "media_upload": 0,
-                                "delay": 0
-                            },
-                            {
-                                "key": "field_5dca77231a6b8",
-                                "label": "Kuva",
-                                "name": "image",
-                                "type": "image",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "return_format": "array",
-                                "preview_size": "medium",
-                                "library": "all",
-                                "min_width": "",
-                                "min_height": "",
-                                "min_size": "",
-                                "max_width": "",
-                                "max_height": "",
-                                "max_size": "",
-                                "mime_types": ""
-                            },
-                            {
-                                "key": "field_5dca77311a6b9",
-                                "label": "Tyylit",
-                                "name": "",
-                                "type": "tab",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "placement": "top",
-                                "endpoint": 0
-                            },
-                            {
-                                "key": "field_5dca773b1a6ba",
-                                "label": "Järjestys",
-                                "name": "order",
-                                "type": "button_group",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "choices": {
-                                    "image-right": "Teksti vasemmalla, kuva oikealla",
-                                    "image-left": "Kuva vasemmalla, teksti oikealla"
-                                },
-                                "allow_null": 0,
-                                "default_value": "image_right",
-                                "layout": "horizontal",
-                                "return_format": "value"
-                            }
-                        ],
-                        "min": "",
-                        "max": ""
-                    }
+                                {
+                                    "key": "field_5da59f136a9d5",
+                                    "label": "Numeron alla oleva teksti",
+                                    "name": "number_description",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 },
-                "button_label": "Lisää elementti",
-                "min": "",
-                "max": ""
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "page"
+                "layout_5dca76fac952b": {
+                    "key": "layout_5dca76fac952b",
+                    "name": "text_image_columns",
+                    "label": "Teksti + Kuva",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5dca7703c952c",
+                            "label": "Asettelu",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5dca77111a6b6",
+                            "label": "Otsikko",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5dca77181a6b7",
+                            "label": "Teksti",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5dca77231a6b8",
+                            "label": "Kuva",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5dca77311a6b9",
+                            "label": "Tyylit",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5dca773b1a6ba",
+                            "label": "Järjestys",
+                            "name": "order",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "image-right": "Teksti vasemmalla, kuva oikealla",
+                                "image-left": "Kuva vasemmalla, teksti oikealla"
+                            },
+                            "allow_null": 0,
+                            "default_value": "image_right",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e6754096244b": {
+                    "key": "layout_5e6754096244b",
+                    "name": "text_image_static",
+                    "label": "Kiinteä teksti vasemmalla, kuva oikealla",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e6754206244c",
+                            "label": "Otsikko",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e6754256244d",
+                            "label": "Teksti",
+                            "name": "text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e6754286244e",
+                            "label": "Linkki",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5e67548f6244f",
+                            "label": "Kuva",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": ""
-    }
-]
+            },
+            "button_label": "Lisää elementti",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1583830171
+}
