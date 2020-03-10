@@ -1,4 +1,4 @@
-# Full list of modules
+# List of modules
 
 ## [Download acf-json for all modules](/acf-json/modular_content.json)
 

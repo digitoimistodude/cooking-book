@@ -1,4 +1,4 @@
-# Full list of blocks (layout)
+# List of blocks (layout)
 
 # global.scss
 
