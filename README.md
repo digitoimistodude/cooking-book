@@ -14,7 +14,7 @@ Dude's cooking book is a collection of frequently used, quick front and back end
 
 - **[List of modules](List%20of%20modules.md)**
 - **[List of layout blocks](List%20of%20blocks.md)**
-- **[List of Recyclable modules](List%20of%20recyclable%20modules.md)**
+- **[List of recyclable modules](List%20of%20recyclable%20modules.md)**
 - **[List of recyclable layout blocks](List%20of%20recyclable%20layout%20blocks.md)**
 
 # Other useful stuff
