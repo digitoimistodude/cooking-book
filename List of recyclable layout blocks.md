@@ -18,6 +18,8 @@ Nothing yet.
 
 ## Page elements
 
+### filters
+
 Reusable filters.
 
 ``` scss
