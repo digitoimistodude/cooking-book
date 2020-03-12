@@ -4,18 +4,17 @@ This document contains list of recyclable modules used in old projects. The poin
 
 # Table of contents
 
-- [coming-soon.php](#coming-soon.php)
+- [text-image-static](#text-image-static)
 
-### coming-soon.php
+### text-image-static
 
 ``` scss
-// Modules
-@import '../modules/upsell-choose-cpt';
+@import '../modules/text-image-static';
 ```
 
-- **[PHP:](/php)** [coming-soon.php](#coming-soon.php)
-- **[SCSS:](/scss)** [coming-soon.php](#coming-soon.php)
+- **[PHP:](/php)** [text-image-static.php](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/template-parts/modules/text-image-static.php)
+- **[SCSS:](/scss)** [_text-image-static.scss](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/sass/modules/_text-image-static.scss)
 
-![upsell_choose_cpt](https://i.imgur.com/gohC6VU.png "upsell_choose_cpt")
+![text-image-static](https://ifup.io/ihAMI.png "text-image-static")
 
 ---
