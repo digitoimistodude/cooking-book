@@ -4,7 +4,10 @@ This document contains list of recyclable modules used in old projects. The poin
 
 # Table of contents
 
-- [text-image-static](#text-image-static)
+1. [Modules with static text and media](#modules-with-static-text-and-media)
+    1. [text-image-static](#text-image-static)
+
+## Modules with static text and media
 
 ### text-image-static
 
