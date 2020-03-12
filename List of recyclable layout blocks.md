@@ -5,12 +5,31 @@ This document contains list of recyclable layout blocks used in old projects. Th
 # Table of contents
 
 1. [Navigations](#navigations)
-2. [Heros](#heros)
+2. [Page elements](#page-elements)
+    1. [filters](#filters)
+3. [Heros](#heros)
     1. [hero-fp-slider](#hero-fp-slider)
-3. [Footers](#footers)
+4. [Footers](#footers)
     1. [footer-with-three-link-cols-and-contact](#footer-with-three-link-cols-and-contact)
 
 ## Navigations
+
+Nothing yet.
+
+## Page elements
+
+Reusable filters.
+
+``` scss
+@import '../layout/filters';
+```
+
+- **[PHP:](/php)** [_template-device.php](https://github.com/digitoimistodude/jptindustria/blob/a487a5ee3de401aa65e292edddb71705f66711a9/content/themes/jptindustria/template-device.php#L64-L139)
+- **[SCSS:](/scss)** [_filters.scss](https://github.com/digitoimistodude/ctsengtec/blob/master/content/themes/ctsengtec/sass/layout/_filters.scss)
+
+![filters](https://ifup.io/v8jKa.png "filters")
+
+---
 
 ## Heros
 
