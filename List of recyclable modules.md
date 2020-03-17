@@ -7,6 +7,7 @@ This document contains list of recyclable modules used in old projects. The poin
 1. [Modules with static text and media](#modules-with-static-text-and-media)
     1. [text-image-static](#text-image-static)
     2. [gallery-slider](#gallery-slider)
+    2. [gallery-masonry](#gallery-masonry)
 2. [Modules with relations to CPTs](#modules-with-relations-to-cpts)
     1. [person](#person)
 
