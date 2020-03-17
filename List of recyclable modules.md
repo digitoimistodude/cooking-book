@@ -36,6 +36,23 @@ This document contains list of recyclable modules used in old projects. The poin
 
 ![gallery](https://ifup.io/AXJhh.png "gallery")
 
+### gallery-masonry
+
+``` scss
+@import '../features/gallery-fullscreen';
+@import '../modules/masonry-gallery';
+```
+
+- **[PHP:](/php)** [masonry-gallery.php](https://github.com/digitoimistodude/byemmi/blob/master/content/themes/byemmi/template-parts/modules/masonry-gallery.php)
+- **[SCSS:](/scss)** [_masonry-gallery.scss](https://github.com/digitoimistodude/byemmi/blob/master/content/themes/byemmi/sass/modules/_masonry-gallery.scss)
+- **[SCSS:](/scss)** [_gallery-fullscreen.scss](https://github.com/digitoimistodude/byemmi/blob/master/content/themes/byemmi/sass/features/_gallery-fullscreen.scss)
+- **[JS:](/js)** [package.json](https://github.com/digitoimistodude/byemmi/blob/1acad5eb3ce90d3a6711f088c61c999e6f880f6f/content/themes/byemmi/package.json#L43)
+- **[JS:](/js)** [scripts.js](https://github.com/digitoimistodude/byemmi/blob/1acad5eb3ce90d3a6711f088c61c999e6f880f6f/content/themes/byemmi/js/src/scripts.js#L24-L54)
+- **[HTML:](/js)** [header.php](https://github.com/digitoimistodude/byemmi/blob/1acad5eb3ce90d3a6711f088c61c999e6f880f6f/content/themes/byemmi/header.php#L26-L35)
+
+![gallery-masonry](https://ifup.io/de6RS.png "gallery-masonry")
+
+
 ---
 
 ## Modules with relations to CPTs
