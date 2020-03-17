@@ -6,6 +6,7 @@ This document contains list of recyclable modules used in old projects. The poin
 
 1. [Modules with static text and media](#modules-with-static-text-and-media)
     1. [text-image-static](#text-image-static)
+    2. [gallery-slider](#gallery-slider)
 2. [Modules with relations to CPTs](#modules-with-relations-to-cpts)
     1. [person](#person)
 
@@ -21,6 +22,19 @@ This document contains list of recyclable modules used in old projects. The poin
 - **[SCSS:](/scss)** [_text-image-static.scss](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/sass/modules/_text-image-static.scss)
 
 ![text-image-static](https://ifup.io/ihAMI.png "text-image-static")
+
+---
+
+### gallery-slider
+
+``` scss
+@import '../modules/gallery';
+```
+
+- **[PHP:](/php)** [gallery.php](https://github.com/digitoimistodude/clojutre/blob/0e1af5404f5b1a69dbcd5b8f0fd9afd89711dcf5/content/themes/clojutre/template-parts/modules/gallery.php#L1-L39)
+- **[SCSS:](/scss)** [_gallery.scss](https://github.com/digitoimistodude/clojutre/blob/0e1af5404f5b1a69dbcd5b8f0fd9afd89711dcf5/content/themes/clojutre/sass/modules/_gallery.scss#L1-L30)
+
+![gallery](https://ifup.io/AXJhh.png "gallery")
 
 ---
 
