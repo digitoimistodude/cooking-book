@@ -5,13 +5,26 @@ This document contains list of recyclable modules used in old projects. The poin
 # Table of contents
 
 1. [Modules with static text and media](#modules-with-static-text-and-media)
-    1. [text-image-static](#text-image-static)
-    2. [gallery-slider](#gallery-slider)
-    2. [gallery-masonry](#gallery-masonry)
+    1. [text-image-cols](#text-image-cols)
+    2. [text-image-static](#text-image-static)
+    3. [gallery-slider](#gallery-slider)
+    4. [gallery-masonry](#gallery-masonry)
 2. [Modules with relations to CPTs](#modules-with-relations-to-cpts)
     1. [person](#person)
 
 ## Modules with static text and media
+
+### text-image-cols
+
+``` scss
+@import '../modules/text-image-cols';
+```
+
+- **[PHP:](/php)** [text-image-cols.php](https://github.com/digitoimistodude/ctsengtec/blob/master/content/themes/ctsengtec/template-parts/modules/text-image-cols.php)
+- **[SCSS:](/scss)** [_text-image-cols.scss](https://github.com/digitoimistodude/ctsengtec/blob/master/content/themes/ctsengtec/sass/modules/_text-image-cols.scss)
+
+![text-image-cols](https://i.imgur.com/rMTGudO.png "text-image-cols")
+
 
 ### text-image-static
 
