@@ -22,7 +22,7 @@ This document contains list of recyclable modules used in old projects. The poin
 - **[PHP:](/php)** [text-image-static.php](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/template-parts/modules/text-image-static.php)
 - **[SCSS:](/scss)** [_text-image-static.scss](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/sass/modules/_text-image-static.scss)
 
-![text-image-static](https://ifup.io/ihAMI.png "text-image-static")
+![text-image-static](https://fileshare.servebeer.com/ihAMI.png "text-image-static")
 
 ---
 
@@ -35,7 +35,7 @@ This document contains list of recyclable modules used in old projects. The poin
 - **[PHP:](/php)** [gallery.php](https://github.com/digitoimistodude/clojutre/blob/0e1af5404f5b1a69dbcd5b8f0fd9afd89711dcf5/content/themes/clojutre/template-parts/modules/gallery.php#L1-L39)
 - **[SCSS:](/scss)** [_gallery.scss](https://github.com/digitoimistodude/clojutre/blob/0e1af5404f5b1a69dbcd5b8f0fd9afd89711dcf5/content/themes/clojutre/sass/modules/_gallery.scss#L1-L30)
 
-![gallery](https://ifup.io/AXJhh.png "gallery")
+![gallery](https://fileshare.servebeer.com/AXJhh.png "gallery")
 
 ### gallery-masonry
 
@@ -53,7 +53,7 @@ This document contains list of recyclable modules used in old projects. The poin
 - **[JS:](/js)** [scripts.js](https://github.com/digitoimistodude/byemmi/blob/1acad5eb3ce90d3a6711f088c61c999e6f880f6f/content/themes/byemmi/js/src/scripts.js#L24-L54)
 - **[HTML:](/js)** [header.php](https://github.com/digitoimistodude/byemmi/blob/1acad5eb3ce90d3a6711f088c61c999e6f880f6f/content/themes/byemmi/header.php#L26-L35)
 
-![gallery-masonry](https://ifup.io/de6RS.png "gallery-masonry")
+![gallery-masonry](https://fileshare.servebeer.com/de6RS.png "gallery-masonry")
 
 
 ---
@@ -69,6 +69,6 @@ This document contains list of recyclable modules used in old projects. The poin
 - **[PHP:](/php)** [person.php](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/template-parts/modules/person.php)
 - **[SCSS:](/scss)** [_person.scss](https://github.com/digitoimistodude/jptindustria/blob/master/content/themes/jptindustria/sass/modules/_person.scss)
 
-![person](https://ifup.io/0byUC.png "person")
+![person](https://fileshare.servebeer.com/0byUC.png "person")
 
 ---
