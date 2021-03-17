@@ -1,3 +1,6 @@
+| :bangbang: | **This repository is no longer maintained. Deprecated in favor of [Cacher](https://www.cacher.io/).**  |
+|:------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 # Cooking book
 
 Dude's cooking book is a collection of frequently used, quick front and back end code snippets by [Digitoimisto Dude Oy](https://www.dude.fi) web developer team. These snippets are mainly quick boilerplates for easy and fast use in WordPress development.
